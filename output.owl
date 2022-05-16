@@ -1,0 +1,3421 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pr: <http://example.org/projet#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+pr: a owl:Ontology .
+
+pr:Control_Risks a owl:Class ;
+    rdfs:subClassOf pr:amount,
+        pr:analysis,
+        pr:approach,
+        pr:assessments,
+        pr:case,
+        pr:cation,
+        pr:cation_technique,
+        pr:cation_techniques,
+        pr:change_requests,
+        pr:contingency_reserves,
+        pr:control_processes,
+        pr:control_risks,
+        pr:control_risks_process,
+        pr:creativity_techniques,
+        pr:data_points,
+        pr:deviation,
+        pr:discussions,
+        pr:documenting_results,
+        pr:documents,
+        pr:effects,
+        pr:elements,
+        pr:execution,
+        pr:format,
+        pr:groups,
+        pr:identification,
+        pr:imagination,
+        pr:information,
+        pr:informationwork_performance,
+        pr:level,
+        pr:list_categories,
+        pr:management_chapter,
+        pr:management_ownership,
+        pr:manager,
+        pr:objectives,
+        pr:order,
+        pr:outcomes,
+        pr:output,
+        pr:performance_measurement,
+        pr:performance_measures,
+        pr:plan_updatesif,
+        pr:probability,
+        pr:process_assets,
+        pr:project_assumptions,
+        pr:project_documents,
+        pr:project_management_plan,
+        pr:project_manager,
+        pr:project_managers,
+        pr:project_objectives,
+        pr:project_risk_process,
+        pr:project_risks,
+        pr:project_stakeholders,
+        pr:project_work,
+        pr:projects,
+        pr:projects_execution,
+        pr:purposes,
+        pr:range,
+        pr:relationship,
+        pr:reports_work,
+        pr:responses,
+        pr:review_approaches,
+        pr:risk,
+        pr:risk_analysis,
+        pr:risk_analysis_process,
+        pr:risk_approach,
+        pr:risk_audits,
+        pr:risk_description,
+        pr:risk_descriptions,
+        pr:risk_management,
+        pr:risk_management_plan,
+        pr:risk_metalanguage,
+        pr:risk_owners,
+        pr:risk_reassessmentcontrol,
+        pr:risk_register,
+        pr:risk_registerthe_risk,
+        pr:risk_response_owner,
+        pr:risk_responses,
+        pr:risks,
+        pr:risks_process,
+        pr:risks_process_results,
+        pr:root_cause,
+        pr:situation,
+        pr:sources,
+        pr:subjectivity,
+        pr:success,
+        pr:success_factors,
+        pr:techniques,
+        pr:tools,
+        pr:trigger_conditions,
+        pr:use,
+        pr:value_analysis,
+        pr:variance,
+        pr:watch_list .
+
+pr:Identify_Risks a owl:Class ;
+    rdfs:subClassOf pr:ability,
+        pr:activity,
+        pr:activity_durations,
+        pr:amount,
+        pr:analysis,
+        pr:analysisevery_project,
+        pr:approaches,
+        pr:aspects,
+        pr:assumptions_analysis,
+        pr:basis,
+        pr:benefit,
+        pr:bias,
+        pr:budgets,
+        pr:categories,
+        pr:cation,
+        pr:cause,
+        pr:chapter,
+        pr:checklist,
+        pr:commitments,
+        pr:conditions,
+        pr:consensus,
+        pr:consideration,
+        pr:cost_management_plan,
+        pr:dates,
+        pr:decisions,
+        pr:discipline,
+        pr:documentation,
+        pr:documentation_reviewsa,
+        pr:edition,
+        pr:effect,
+        pr:elements,
+        pr:enterprise,
+        pr:estimate_reviews,
+        pr:example,
+        pr:expert_judgmentrisks,
+        pr:experts,
+        pr:experts_bias,
+        pr:facilitator,
+        pr:frequency,
+        pr:guide,
+        pr:identification_checklists,
+        pr:information,
+        pr:input,
+        pr:inputs,
+        pr:insight,
+        pr:items,
+        pr:learning,
+        pr:lessons,
+        pr:level,
+        pr:management_chapter,
+        pr:management_plan,
+        pr:management_process,
+        pr:management_processes,
+        pr:management_project,
+        pr:management_purpose,
+        pr:material,
+        pr:nes_aspects,
+        pr:objectives,
+        pr:opportunities,
+        pr:order,
+        pr:orientation,
+        pr:outcomes,
+        pr:perspectives,
+        pr:plan_risk,
+        pr:pmbok,
+        pr:pmi_practice_standard,
+        pr:practice_project,
+        pr:practice_standard,
+        pr:practitioners,
+        pr:principles,
+        pr:probability,
+        pr:problem,
+        pr:process,
+        pr:process_assets,
+        pr:processes,
+        pr:procurement_documents,
+        pr:project,
+        pr:project_assumptions,
+        pr:project_closure,
+        pr:project_documents,
+        pr:project_execution,
+        pr:project_management,
+        pr:project_manager,
+        pr:project_plan,
+        pr:project_requirements,
+        pr:project_risk,
+        pr:project_risk_management,
+        pr:project_risks,
+        pr:project_scheduling,
+        pr:project_team,
+        pr:projects,
+        pr:quality_management_plan,
+        pr:questionnaire,
+        pr:resource_management_plan,
+        pr:responses,
+        pr:review,
+        pr:risk,
+        pr:risk_analysis,
+        pr:risk_exposure,
+        pr:risk_management,
+        pr:risk_management_approach,
+        pr:risk_managementparticipants,
+        pr:risk_registerthe,
+        pr:risk_statement,
+        pr:risk_statements,
+        pr:risks,
+        pr:risks_process,
+        pr:role,
+        pr:schedule_management_plan,
+        pr:scheduling,
+        pr:series,
+        pr:signi,
+        pr:situation,
+        pr:team,
+        pr:technique,
+        pr:techniquesrisk,
+        pr:timeschedule_objectives,
+        pr:tool,
+        pr:uncertainty,
+        pr:value,
+        pr:way,
+        pr:wbs .
+
+pr:Perform_Qualitative_Risk_Analysis a owl:Class ;
+    rdfs:subClassOf pr:addition,
+        pr:amount,
+        pr:assessment,
+        pr:assumptions,
+        pr:attitudes,
+        pr:c_events,
+        pr:c_needs,
+        pr:cation,
+        pr:causes,
+        pr:chain,
+        pr:commitment,
+        pr:communication,
+        pr:component,
+        pr:conclusion_principles,
+        pr:conclusions,
+        pr:conditions,
+        pr:contingency_reserve_levels,
+        pr:cost,
+        pr:de_nition,
+        pr:definitions,
+        pr:degree,
+        pr:discipline,
+        pr:effects,
+        pr:effort,
+        pr:elements,
+        pr:enterprise,
+        pr:events,
+        pr:example,
+        pr:expert_judgment,
+        pr:experts_bias,
+        pr:fact,
+        pr:figure,
+        pr:foundation,
+        pr:frequency,
+        pr:future,
+        pr:gain,
+        pr:impact_matrix,
+        pr:impact_matrixrisks,
+        pr:indicators,
+        pr:information,
+        pr:inputs,
+        pr:level,
+        pr:management_activities,
+        pr:management_chapter,
+        pr:management_process,
+        pr:management_processes,
+        pr:management_understanding,
+        pr:matrix,
+        pr:means,
+        pr:nature,
+        pr:nition,
+        pr:organization,
+        pr:organizations,
+        pr:principles,
+        pr:probability,
+        pr:problems_opportunities,
+        pr:process,
+        pr:process_assets,
+        pr:progress,
+        pr:project,
+        pr:project_documents,
+        pr:project_managers,
+        pr:project_outcomes,
+        pr:project_phase,
+        pr:project_risk,
+        pr:project_risk_management,
+        pr:project_stakeholders,
+        pr:projects,
+        pr:projects_objectives,
+        pr:projects_team,
+        pr:quality_assessmentrisk,
+        pr:qualityeach_risk,
+        pr:recognize_value,
+        pr:risk,
+        pr:risk_analysis,
+        pr:risk_analysis_process,
+        pr:risk_approaches,
+        pr:risk_assessment,
+        pr:risk_categorizationrisks,
+        pr:risk_effort,
+        pr:risk_impact_assessment,
+        pr:risk_management,
+        pr:risk_managementas,
+        pr:risk_managementperform,
+        pr:risk_ranking,
+        pr:risk_rating_rules,
+        pr:risk_statement,
+        pr:risk_urgency,
+        pr:risks,
+        pr:risks_importance,
+        pr:signi,
+        pr:stakeholders,
+        pr:success,
+        pr:sum,
+        pr:targets,
+        pr:technique,
+        pr:term_probability,
+        pr:terms,
+        pr:threats,
+        pr:time_criticality,
+        pr:tools_techniques,
+        pr:uncertainty_dimension,
+        pr:use,
+        pr:way_process,
+        pr:ways,
+        pr:word_risk,
+        pr:work_packages .
+
+pr:Perform_Quantitative_Risk_Analysis a owl:Class ;
+    rdfs:subClassOf pr:actions,
+        pr:addition,
+        pr:analysis,
+        pr:approach,
+        pr:areas,
+        pr:attempt,
+        pr:availability,
+        pr:base_values,
+        pr:calculations,
+        pr:capital_strategies,
+        pr:cation_techniques,
+        pr:changes,
+        pr:chapter,
+        pr:chapter_implements,
+        pr:chapters,
+        pr:characteristics,
+        pr:choice,
+        pr:completingthe_project,
+        pr:completion_date,
+        pr:concept,
+        pr:contingency_reserves,
+        pr:cost_contingency,
+        pr:cost_management_plan,
+        pr:curves,
+        pr:data,
+        pr:data_flow,
+        pr:de_nition,
+        pr:decision_branch,
+        pr:decision_making,
+        pr:distribution,
+        pr:document,
+        pr:edition_project_risk,
+        pr:effectiveness,
+        pr:elements,
+        pr:emv,
+        pr:end,
+        pr:enterprise,
+        pr:environment,
+        pr:example,
+        pr:expert_judgment,
+        pr:experts,
+        pr:figure,
+        pr:guidelines,
+        pr:history,
+        pr:importance,
+        pr:industry_studies,
+        pr:information,
+        pr:input,
+        pr:insight,
+        pr:insights,
+        pr:instance,
+        pr:lack,
+        pr:list,
+        pr:management_chapter,
+        pr:management_process,
+        pr:memv,
+        pr:model,
+        pr:nature,
+        pr:ning_actions,
+        pr:none,
+        pr:objectives,
+        pr:order,
+        pr:organization,
+        pr:others,
+        pr:outcome_future,
+        pr:output,
+        pr:outputs,
+        pr:part,
+        pr:path_valuedecision,
+        pr:percent,
+        pr:probability,
+        pr:process,
+        pr:process_assets,
+        pr:process_effectiveness,
+        pr:project,
+        pr:project_documents,
+        pr:project_element,
+        pr:project_management,
+        pr:project_manager,
+        pr:project_model,
+        pr:project_objectives,
+        pr:project_risk,
+        pr:project_risk_management,
+        pr:project_schedule,
+        pr:project_simulation,
+        pr:project_stakeholders,
+        pr:project_team,
+        pr:projects,
+        pr:rationale,
+        pr:response_strategies,
+        pr:risk,
+        pr:risk_analysis,
+        pr:risk_analysis_chapter,
+        pr:risk_analysis_process,
+        pr:risk_evaluation,
+        pr:risk_information,
+        pr:risk_interview,
+        pr:risk_management_plan,
+        pr:risk_owner,
+        pr:risk_process,
+        pr:risk_register,
+        pr:risk_responses,
+        pr:risk_responses_chapter,
+        pr:risk_thresholds,
+        pr:risks,
+        pr:risks_process,
+        pr:risktaking_scenarios,
+        pr:role,
+        pr:schedule_impacts,
+        pr:schedule_management_plan,
+        pr:sensitivity_analysis,
+        pr:simulation,
+        pr:stakeholder_risk_tolerances,
+        pr:stakeholders,
+        pr:statements,
+        pr:status,
+        pr:step,
+        pr:tailoring,
+        pr:techniques,
+        pr:threepoint_estimates,
+        pr:tool,
+        pr:tools_techniques,
+        pr:tornado_diagram,
+        pr:trends,
+        pr:triangular_distributions,
+        pr:uncertainty,
+        pr:understanding,
+        pr:use,
+        pr:value,
+        pr:value_emv_analysis .
+
+pr:Plan_Risk_Management a owl:Class ;
+    rdfs:subClassOf pr:agreement,
+        pr:approaches,
+        pr:attendees,
+        pr:b_evolution,
+        pr:baseline,
+        pr:component,
+        pr:consideration,
+        pr:cost_elements,
+        pr:custom_categorization_framework,
+        pr:d_techniques,
+        pr:data,
+        pr:defines,
+        pr:documents_risk_activities,
+        pr:enterprise,
+        pr:establishment,
+        pr:estimates_funds,
+        pr:example,
+        pr:expert,
+        pr:form,
+        pr:impact_definitions,
+        pr:impact_matrix,
+        pr:impact_scales,
+        pr:management_chapter,
+        pr:management_team,
+        pr:management_tools,
+        pr:managementappendix_c,
+        pr:objectives,
+        pr:opportunity,
+        pr:opportunity_transfer,
+        pr:organization,
+        pr:planin_planning,
+        pr:planning,
+        pr:planning_meetings,
+        pr:planthe_risk,
+        pr:process,
+        pr:process_assets,
+        pr:process_chapter,
+        pr:project,
+        pr:project_charter,
+        pr:project_life_cycle,
+        pr:project_management_plan,
+        pr:project_manager,
+        pr:project_risk,
+        pr:project_team,
+        pr:projects_stakeholders,
+        pr:protocols,
+        pr:rbs_structures,
+        pr:resources,
+        pr:risk_analysis,
+        pr:risk_breakdown_structure,
+        pr:risk_categories,
+        pr:risk_impact,
+        pr:risk_management,
+        pr:risk_management_context,
+        pr:risk_management_plan,
+        pr:risk_management_process,
+        pr:risk_probability,
+        pr:risk_responses,
+        pr:sponsorapproval_costincrease,
+        pr:stakeholders,
+        pr:success_factors,
+        pr:table,
+        pr:tables,
+        pr:team_members,
+        pr:techniques,
+        pr:techniques_d,
+        pr:timeincreaseminor_areas,
+        pr:work_b_scope .
+
+pr:Plan_Risk_Responses a owl:Class ;
+    rdfs:subClassOf pr:acceptance,
+        pr:access,
+        pr:account,
+        pr:action,
+        pr:actions,
+        pr:activities,
+        pr:agreement,
+        pr:analysis,
+        pr:applicability,
+        pr:approach,
+        pr:cases,
+        pr:cation,
+        pr:cation_risk,
+        pr:change_requests,
+        pr:communication,
+        pr:consistency,
+        pr:contingency_reserve,
+        pr:cost,
+        pr:cost_accounting,
+        pr:cost_risk,
+        pr:criteria,
+        pr:decision,
+        pr:decision_making,
+        pr:description_risk,
+        pr:document_strategy,
+        pr:drivers,
+        pr:example,
+        pr:examples,
+        pr:expectations,
+        pr:experience,
+        pr:expert_judgmentexpert_judgment,
+        pr:expertise,
+        pr:fallback_plan,
+        pr:feasibility,
+        pr:frequency,
+        pr:information,
+        pr:input,
+        pr:level,
+        pr:liability,
+        pr:management,
+        pr:management_activities,
+        pr:management_chapter,
+        pr:management_process,
+        pr:management_processes,
+        pr:management_templates,
+        pr:management_time,
+        pr:means,
+        pr:mechanism,
+        pr:milestones,
+        pr:mitigation,
+        pr:mitigation_response,
+        pr:monitoring_methods,
+        pr:number,
+        pr:objective,
+        pr:opportunities,
+        pr:order,
+        pr:organizations_objectives,
+        pr:output,
+        pr:overview,
+        pr:parameters,
+        pr:participants,
+        pr:plan,
+        pr:plan_updateselements,
+        pr:planning_information,
+        pr:pmbok,
+        pr:point,
+        pr:process,
+        pr:process_assets,
+        pr:processes,
+        pr:project,
+        pr:project_budget,
+        pr:project_decisions,
+        pr:project_documents,
+        pr:project_evolves,
+        pr:project_lifecycle,
+        pr:project_management,
+        pr:project_management_plan,
+        pr:project_manager,
+        pr:project_objective,
+        pr:project_objectives,
+        pr:project_risk,
+        pr:project_stakeholders,
+        pr:project_team,
+        pr:prototype_development,
+        pr:provision,
+        pr:quality_assurance,
+        pr:reduction,
+        pr:response_plan,
+        pr:responses,
+        pr:risk,
+        pr:risk_acceptance,
+        pr:risk_attitudes,
+        pr:risk_avoidance,
+        pr:risk_categories,
+        pr:risk_management,
+        pr:risk_management_activities,
+        pr:risk_management_approach,
+        pr:risk_management_plan,
+        pr:risk_management_planning,
+        pr:risk_management_processes,
+        pr:risk_mitigation,
+        pr:risk_register,
+        pr:risk_registerthe_risk,
+        pr:risk_response,
+        pr:risk_response_plan,
+        pr:risk_responses,
+        pr:risk_thresholds,
+        pr:risk_transference,
+        pr:risks,
+        pr:risks_process,
+        pr:risks_purpose,
+        pr:root_causes,
+        pr:rules,
+        pr:sections,
+        pr:sharing_actions,
+        pr:skills,
+        pr:staff_allocation,
+        pr:stages,
+        pr:stakeholders,
+        pr:stakeholders_attitudes,
+        pr:strategies,
+        pr:strategy,
+        pr:success,
+        pr:success_factors,
+        pr:team,
+        pr:team_approach,
+        pr:technology_upgrades,
+        pr:templates,
+        pr:terms,
+        pr:threat,
+        pr:threatsthree_strategies,
+        pr:tools_techniques,
+        pr:transference_tools,
+        pr:trigger_conditions,
+        pr:triggers,
+        pr:uncertainties,
+        pr:understanding,
+        pr:value,
+        pr:variance,
+        pr:warning,
+        pr:way,
+        pr:words,
+        pr:work_products .
+
+pr:beaccount a owl:ObjectProperty .
+
+pr:beaction a owl:ObjectProperty .
+
+pr:beaction_owners a owl:ObjectProperty .
+
+pr:beaction_plans a owl:ObjectProperty .
+
+pr:beagenda_item a owl:ObjectProperty .
+
+pr:beassumptions a owl:ObjectProperty .
+
+pr:beattempt a owl:ObjectProperty .
+
+pr:beaudit a owl:ObjectProperty .
+
+pr:bebene a owl:ObjectProperty .
+
+pr:bebenefit a owl:ObjectProperty .
+
+pr:bebias a owl:ObjectProperty .
+
+pr:bebreakdown_structure a owl:ObjectProperty .
+
+pr:bebusiness_areas a owl:ObjectProperty .
+
+pr:becation a owl:ObjectProperty .
+
+pr:becation_events a owl:ObjectProperty .
+
+pr:becertainty a owl:ObjectProperty .
+
+pr:becheck a owl:ObjectProperty .
+
+pr:becompliance a owl:ObjectProperty .
+
+pr:beconditions a owl:ObjectProperty .
+
+pr:beconsideration a owl:ObjectProperty .
+
+pr:becontrol_account a owl:ObjectProperty .
+
+pr:beculture a owl:ObjectProperty .
+
+pr:bedecision_madeinput a owl:ObjectProperty .
+
+pr:bediscipline a owl:ObjectProperty .
+
+pr:beed a owl:ObjectProperty .
+
+pr:beescalation a owl:ObjectProperty .
+
+pr:beexample a owl:ObjectProperty .
+
+pr:beframework a owl:ObjectProperty .
+
+pr:begroups a owl:ObjectProperty .
+
+pr:behigh a owl:ObjectProperty .
+
+pr:beimpact a owl:ObjectProperty .
+
+pr:beimpact_matrix a owl:ObjectProperty .
+
+pr:beimpact_perspective a owl:ObjectProperty .
+
+pr:beimpacts_organization a owl:ObjectProperty .
+
+pr:beimplementation a owl:ObjectProperty .
+
+pr:beindicators a owl:ObjectProperty .
+
+pr:beindustry a owl:ObjectProperty .
+
+pr:beinformation a owl:ObjectProperty .
+
+pr:beinputs a owl:ObjectProperty .
+
+pr:beintervals a owl:ObjectProperty .
+
+pr:belevel a owl:ObjectProperty .
+
+pr:bemanagement_process a owl:ObjectProperty .
+
+pr:bemanagement_processes a owl:ObjectProperty .
+
+pr:bemanner a owl:ObjectProperty .
+
+pr:bemeeting_challenge a owl:ObjectProperty .
+
+pr:bemilestones a owl:ObjectProperty .
+
+pr:beneeds a owl:ObjectProperty .
+
+pr:benumber a owl:ObjectProperty .
+
+pr:beopportunities a owl:ObjectProperty .
+
+pr:beorder a owl:ObjectProperty .
+
+pr:beorganizations_capabilities a owl:ObjectProperty .
+
+pr:beorganizations_processes a owl:ObjectProperty .
+
+pr:beothers a owl:ObjectProperty .
+
+pr:bepart a owl:ObjectProperty .
+
+pr:beperformance a owl:ObjectProperty .
+
+pr:beperformance_bonds a owl:ObjectProperty .
+
+pr:beperformance_information a owl:ObjectProperty .
+
+pr:beplanning a owl:ObjectProperty .
+
+pr:beplans a owl:ObjectProperty .
+
+pr:bepractice a owl:ObjectProperty .
+
+pr:bepreference a owl:ObjectProperty .
+
+pr:beproblems_opportunities a owl:ObjectProperty .
+
+pr:beprocess a owl:ObjectProperty .
+
+pr:beprocess_assets a owl:ObjectProperty .
+
+pr:beprocesses a owl:ObjectProperty .
+
+pr:beprogress a owl:ObjectProperty .
+
+pr:beproject a owl:ObjectProperty .
+
+pr:beproject_budget a owl:ObjectProperty .
+
+pr:beproject_closure a owl:ObjectProperty .
+
+pr:beproject_context a owl:ObjectProperty .
+
+pr:beproject_files a owl:ObjectProperty .
+
+pr:beproject_life_cycle a owl:ObjectProperty .
+
+pr:beproject_lifecycle a owl:ObjectProperty .
+
+pr:beproject_management_plan a owl:ObjectProperty .
+
+pr:beproject_management_processes a owl:ObjectProperty .
+
+pr:beproject_manager a owl:ObjectProperty .
+
+pr:beproject_objectives a owl:ObjectProperty .
+
+pr:beproject_performance a owl:ObjectProperty .
+
+pr:beproject_plans a owl:ObjectProperty .
+
+pr:beproject_risk a owl:ObjectProperty .
+
+pr:beproject_stakeholders a owl:ObjectProperty .
+
+pr:beproject_team a owl:ObjectProperty .
+
+pr:beprojects a owl:ObjectProperty .
+
+pr:bepurpose a owl:ObjectProperty .
+
+pr:berbs a owl:ObjectProperty .
+
+pr:berequirements a owl:ObjectProperty .
+
+pr:beresponses_process a owl:ObjectProperty .
+
+pr:beresult a owl:ObjectProperty .
+
+pr:berisk a owl:ObjectProperty .
+
+pr:berisk_analysis a owl:ObjectProperty .
+
+pr:berisk_analysis_results a owl:ObjectProperty .
+
+pr:berisk_assessment a owl:ObjectProperty .
+
+pr:berisk_categories a owl:ObjectProperty .
+
+pr:berisk_checklist a owl:ObjectProperty .
+
+pr:berisk_e a owl:ObjectProperty .
+
+pr:berisk_impacts a owl:ObjectProperty .
+
+pr:berisk_management a owl:ObjectProperty .
+
+pr:berisk_management_plan a owl:ObjectProperty .
+
+pr:berisk_owner a owl:ObjectProperty .
+
+pr:berisk_process a owl:ObjectProperty .
+
+pr:berisk_register a owl:ObjectProperty .
+
+pr:berisk_responses a owl:ObjectProperty .
+
+pr:berisk_statement a owl:ObjectProperty .
+
+pr:berisk_thresholds a owl:ObjectProperty .
+
+pr:berisks a owl:ObjectProperty .
+
+pr:beroot_cause a owl:ObjectProperty .
+
+pr:beroot_causes a owl:ObjectProperty .
+
+pr:berounds a owl:ObjectProperty .
+
+pr:bestages a owl:ObjectProperty .
+
+pr:bestakeholders a owl:ObjectProperty .
+
+pr:bestakeholders_responsibility a owl:ObjectProperty .
+
+pr:besuccess a owl:ObjectProperty .
+
+pr:beteam a owl:ObjectProperty .
+
+pr:betechniques a owl:ObjectProperty .
+
+pr:betemplates a owl:ObjectProperty .
+
+pr:beterm_probability a owl:ObjectProperty .
+
+pr:bethreshold_limits a owl:ObjectProperty .
+
+pr:betime a owl:ObjectProperty .
+
+pr:betornado_diagram a owl:ObjectProperty .
+
+pr:betypes a owl:ObjectProperty .
+
+pr:bevalue a owl:ObjectProperty .
+
+pr:bewatch_list a owl:ObjectProperty .
+
+pr:beway a owl:ObjectProperty .
+
+pr:beway_process a owl:ObjectProperty .
+
+pr:beweighting_factors a owl:ObjectProperty .
+
+pr:hascapabilities a owl:DatatypeProperty .
+
+pr:hasemv a owl:DatatypeProperty .
+
+pr:hasmanagement_process a owl:DatatypeProperty .
+
+pr:hasprojects a owl:DatatypeProperty .
+
+pr:hasresponse a owl:DatatypeProperty .
+
+pr:hasrisk_owners a owl:DatatypeProperty .
+
+pr:hasrole a owl:DatatypeProperty .
+
+pr:hasstrengths a owl:DatatypeProperty .
+
+pr:hastraining a owl:DatatypeProperty .
+
+pr:havecost_contingency a owl:DatatypeProperty .
+
+pr:haveeffect a owl:DatatypeProperty .
+
+pr:haveperspective a owl:DatatypeProperty .
+
+pr:haveproject_objectives a owl:DatatypeProperty .
+
+pr:haveprojects_objectives a owl:DatatypeProperty .
+
+pr:isaccuracy a owl:ObjectProperty .
+
+pr:isactivity a owl:ObjectProperty .
+
+pr:isanalysis_figure a owl:ObjectProperty .
+
+pr:isauthority_levels a owl:ObjectProperty .
+
+pr:isbar_chart a owl:ObjectProperty .
+
+pr:isbasis a owl:ObjectProperty .
+
+pr:ischapter a owl:ObjectProperty .
+
+pr:iscomponent a owl:ObjectProperty .
+
+pr:isconcept a owl:ObjectProperty .
+
+pr:isconcept_stage a owl:ObjectProperty .
+
+pr:iscriterion a owl:ObjectProperty .
+
+pr:iscrossindustry a owl:ObjectProperty .
+
+pr:isdecision_making a owl:ObjectProperty .
+
+pr:isdetail a owl:ObjectProperty .
+
+pr:isdiscipline a owl:ObjectProperty .
+
+pr:isdocumentation a owl:ObjectProperty .
+
+pr:iseffect a owl:ObjectProperty .
+
+pr:iseffectivelyuseless_probability a owl:ObjectProperty .
+
+pr:isentry a owl:ObjectProperty .
+
+pr:isevent a owl:ObjectProperty .
+
+pr:isexample a owl:ObjectProperty .
+
+pr:isfeatures a owl:ObjectProperty .
+
+pr:isfigure a owl:ObjectProperty .
+
+pr:isimpact_matrix a owl:ObjectProperty .
+
+pr:isimplementation a owl:ObjectProperty .
+
+pr:isimportance a owl:ObjectProperty .
+
+pr:isinformation a owl:ObjectProperty .
+
+pr:isinput a owl:ObjectProperty .
+
+pr:isinput_values a owl:ObjectProperty .
+
+pr:isinputs a owl:ObjectProperty .
+
+pr:isinterview a owl:ObjectProperty .
+
+pr:isiterations a owl:ObjectProperty .
+
+pr:isjeopardy a owl:ObjectProperty .
+
+pr:islowpriority_risks a owl:ObjectProperty .
+
+pr:ismanagement_activity a owl:ObjectProperty .
+
+pr:ismanagement_plan a owl:ObjectProperty .
+
+pr:ismanagement_process a owl:ObjectProperty .
+
+pr:ismapping_probability a owl:ObjectProperty .
+
+pr:ismeans a owl:ObjectProperty .
+
+pr:isminimum a owl:ObjectProperty .
+
+pr:isnature a owl:ObjectProperty .
+
+pr:isnes_aspects a owl:ObjectProperty .
+
+pr:isning_actions a owl:ObjectProperty .
+
+pr:isnonrisks a owl:ObjectProperty .
+
+pr:isorder a owl:ObjectProperty .
+
+pr:isorganizations_goals a owl:ObjectProperty .
+
+pr:ispart a owl:ObjectProperty .
+
+pr:isparties a owl:ObjectProperty .
+
+pr:ispercent a owl:ObjectProperty .
+
+pr:ispractice_standard a owl:ObjectProperty .
+
+pr:isprerequisite a owl:ObjectProperty .
+
+pr:isprobability a owl:ObjectProperty .
+
+pr:isprocess a owl:ObjectProperty .
+
+pr:isprocess_credibility a owl:ObjectProperty .
+
+pr:isprocess_descriptions a owl:ObjectProperty .
+
+pr:isproject a owl:ObjectProperty .
+
+pr:isproject_life_cycle a owl:ObjectProperty .
+
+pr:isproject_management a owl:ObjectProperty .
+
+pr:isproject_management_plan a owl:ObjectProperty .
+
+pr:isproject_objectives a owl:ObjectProperty .
+
+pr:isproject_plans a owl:ObjectProperty .
+
+pr:isproject_results a owl:ObjectProperty .
+
+pr:isproject_risk a owl:ObjectProperty .
+
+pr:isproject_risks a owl:ObjectProperty .
+
+pr:isproject_team a owl:ObjectProperty .
+
+pr:isprojects a owl:ObjectProperty .
+
+pr:isprojects_life_cycle a owl:ObjectProperty .
+
+pr:isreference_point a owl:ObjectProperty .
+
+pr:isresponses a owl:ObjectProperty .
+
+pr:isresponsibility a owl:ObjectProperty .
+
+pr:isrisk a owl:ObjectProperty .
+
+pr:isrisk_analysis a owl:ObjectProperty .
+
+pr:isrisk_audits a owl:ObjectProperty .
+
+pr:isrisk_exposure a owl:ObjectProperty .
+
+pr:isrisk_management a owl:ObjectProperty .
+
+pr:isrisk_ranking a owl:ObjectProperty .
+
+pr:isrisk_register a owl:ObjectProperty .
+
+pr:isrisk_responses a owl:ObjectProperty .
+
+pr:isrisks a owl:ObjectProperty .
+
+pr:issections a owl:ObjectProperty .
+
+pr:isset a owl:ObjectProperty .
+
+pr:isshape_parameters a owl:ObjectProperty .
+
+pr:issigni a owl:ObjectProperty .
+
+pr:issimulation_results a owl:ObjectProperty .
+
+pr:isstages a owl:ObjectProperty .
+
+pr:isstakeholder_risk_tolerances a owl:ObjectProperty .
+
+pr:isstart a owl:ObjectProperty .
+
+pr:isstrategy_project a owl:ObjectProperty .
+
+pr:isstrengths a owl:ObjectProperty .
+
+pr:issubstitute a owl:ObjectProperty .
+
+pr:issuccess_factor a owl:ObjectProperty .
+
+pr:issum a owl:ObjectProperty .
+
+pr:istechnique a owl:ObjectProperty .
+
+pr:istime a owl:ObjectProperty .
+
+pr:istiming a owl:ObjectProperty .
+
+pr:istrend a owl:ObjectProperty .
+
+pr:isuse a owl:ObjectProperty .
+
+pr:isvalue a owl:ObjectProperty .
+
+pr:isway a owl:ObjectProperty .
+
+pr:isways a owl:ObjectProperty .
+
+pr:ability pr:compare pr:effect ;
+    pr:compareprocess_credibility pr:effect .
+
+pr:acceptance pr:requires pr:document_strategy ;
+    pr:requiresprocess_credibility pr:document_strategy .
+
+pr:access pr:allow pr:experience ;
+    pr:allowprocess_credibility pr:experience .
+
+pr:analysisevery_project pr:is pr:set ;
+    pr:isprocess_credibility pr:set .
+
+pr:assessment pr:requires pr:risk_approaches ;
+    pr:requiresprocess_credibility pr:risk_approaches .
+
+pr:assessments pr:expose pr:areas ;
+    pr:exposeprocess_credibility pr:areas .
+
+pr:assumptions_analysis pr:explores pr:validity ;
+    pr:exploresprocess_credibility pr:validity .
+
+pr:attendees pr:include pr:project_manager ;
+    pr:includeprocess_credibility pr:project_manager .
+
+pr:attitudes pr:be pr:management_process ;
+    pr:beprocess_credibility pr:management_process .
+
+pr:availability pr:need pr:statements ;
+    pr:needprocess_credibility pr:statements .
+
+pr:b_evolution pr:preproject pr:work_b_scope ;
+    pr:preprojectprocess_credibility pr:work_b_scope .
+
+pr:budgets pr:make pr:commitments ;
+    pr:makeprocess_credibility pr:commitments .
+
+pr:c_events pr:affect pr:project_objectives ;
+    pr:affectprocess_credibility pr:project_objectives .
+
+pr:c_needs pr:be pr:stakeholders_responsibility ;
+    pr:beprocess_credibility pr:stakeholders_responsibility .
+
+pr:calculations pr:has pr:emv ;
+    pr:hasprocess_credibility pr:emv .
+
+pr:capital_strategies pr:nodes pr:environment ;
+    pr:nodesprocess_credibility pr:environment .
+
+pr:cases pr:transfer pr:fixedprice_contract ;
+    pr:transferprocess_credibility pr:fixedprice_contract .
+
+pr:categories pr:be pr:framework ;
+    pr:beprocess_credibility pr:framework .
+
+pr:cation_risk pr:be pr:project_lifecycle ;
+    pr:beprocess_credibility pr:project_lifecycle .
+
+pr:cation_technique pr:has pr:strengths ;
+    pr:hasprocess_credibility pr:strengths .
+
+pr:causes pr:exist pr:future ;
+    pr:existprocess_credibility pr:future .
+
+pr:chain pr:be pr:risk_statement ;
+    pr:beprocess_credibility pr:risk_statement .
+
+pr:chapter_implements pr:reviews pr:reviews_changes ;
+    pr:reviewsprocess_credibility pr:reviews_changes .
+
+pr:chapters pr:follows pr:management_chapter ;
+    pr:followsprocess_credibility pr:management_chapter .
+
+pr:choice pr:represents pr:risk ;
+    pr:representsprocess_credibility pr:risk .
+
+pr:commitment pr:be pr:risk_management ;
+    pr:beprocess_credibility pr:risk_management .
+
+pr:completingthe_project pr:is pr:simulation_results ;
+    pr:isprocess_credibility pr:simulation_results .
+
+pr:completion_date pr:is pr:iterations ;
+    pr:isprocess_credibility pr:iterations .
+
+pr:conclusion_principles pr:be pr:project ;
+    pr:beprocess_credibility pr:project .
+
+pr:contingency_reserve pr:handle pr:risks ;
+    pr:handleprocess_credibility pr:risks ;
+    pr:is pr:time ;
+    pr:isprocess_credibility pr:time .
+
+pr:control_processes pr:compare pr:results ;
+    pr:compareprocess_credibility pr:results .
+
+pr:control_risks pr:includes pr:process_assets ;
+    pr:includesprocess_credibility pr:process_assets ;
+    pr:involve pr:fallback_plan ;
+    pr:involveprocess_credibility pr:fallback_plan ;
+    pr:is pr:risks ;
+    pr:isprocess_credibility pr:risks .
+
+pr:control_risks_process pr:applies pr:techniques ;
+    pr:appliesprocess_credibility pr:techniques .
+
+pr:cost_accounting pr:updates pr:budget_strategy ;
+    pr:updatesprocess_credibility pr:budget_strategy .
+
+pr:cost_elements pr:be pr:project_budget ;
+    pr:beprocess_credibility pr:project_budget .
+
+pr:cost_risk pr:transfer pr:risk ;
+    pr:transferprocess_credibility pr:risk .
+
+pr:creativity_techniques pr:be pr:risk ;
+    pr:beprocess_credibility pr:risk .
+
+pr:criteria pr:take pr:actions ;
+    pr:takeprocess_credibility pr:actions .
+
+pr:curves pr:be pr:project_objectives ;
+    pr:beprocess_credibility pr:project_objectives .
+
+pr:data_flow pr:is pr:risks ;
+    pr:isprocess_credibility pr:risks .
+
+pr:data_points pr:be pr:performance ;
+    pr:beprocess_credibility pr:performance .
+
+pr:decision pr:be pr:templates ;
+    pr:beprocess_credibility pr:templates .
+
+pr:decision_branch pr:see pr:areas ;
+    pr:seeprocess_credibility pr:areas .
+
+pr:defines pr:be pr:project_life_cycle ;
+    pr:beprocess_credibility pr:project_life_cycle .
+
+pr:definitions pr:reduce pr:influence ;
+    pr:reduceprocess_credibility pr:influence .
+
+pr:description_risk pr:templates pr:communications_plan_strategy ;
+    pr:templatesprocess_credibility pr:communications_plan_strategy .
+
+pr:deviation pr:help pr:help ;
+    pr:helpprocess_credibility pr:help ;
+    pr:indicate pr:impact ;
+    pr:indicateprocess_credibility pr:impact .
+
+pr:discussions pr:identify pr:risks ;
+    pr:identifyprocess_credibility pr:risks .
+
+pr:distribution pr:ranges pr:triangular_distributions ;
+    pr:rangesprocess_credibility pr:triangular_distributions .
+
+pr:document pr:be pr:level ;
+    pr:beprocess_credibility pr:level .
+
+pr:documentation_reviewsa pr:be pr:project_files ;
+    pr:beprocess_credibility pr:project_files .
+
+pr:documenting_results pr:identify pr:risks_process_results ;
+    pr:identifyprocess_credibility pr:risks_process_results .
+
+pr:documents pr:be pr:project_closure ;
+    pr:beprocess_credibility pr:project_closure .
+
+pr:documents_risk_activities pr:be pr:benefit ;
+    pr:beprocess_credibility pr:benefit .
+
+pr:drivers pr:increase pr:probability ;
+    pr:increaseprocess_credibility pr:probability .
+
+pr:edition_project_risk pr:managementinputs pr:techniques_outputs ;
+    pr:managementinputsprocess_credibility pr:techniques_outputs .
+
+pr:effort pr:enhance pr:project_success ;
+    pr:enhanceprocess_credibility pr:project_success .
+
+pr:end pr:shows pr:effect ;
+    pr:showsprocess_credibility pr:effect .
+
+pr:estimate_reviews pr:complete pr:activities ;
+    pr:completeprocess_credibility pr:activities .
+
+pr:estimates_funds pr:establishes pr:management_reserves ;
+    pr:establishesprocess_credibility pr:management_reserves .
+
+pr:examples pr:project pr:project ;
+    pr:projectprocess_credibility pr:project .
+
+pr:expert pr:ensure pr:establishment ;
+    pr:ensureprocess_credibility pr:establishment .
+
+pr:expert_judgmentexpert_judgment pr:is pr:parties ;
+    pr:isprocess_credibility pr:parties .
+
+pr:expert_judgmentrisks pr:be pr:business_areas ;
+    pr:beprocess_credibility pr:business_areas .
+
+pr:expertise pr:be pr:risk_responses ;
+    pr:beprocess_credibility pr:risk_responses .
+
+pr:facilitator pr:uses pr:questionnaire ;
+    pr:usesprocess_credibility pr:questionnaire .
+
+pr:fact pr:adopt pr:risk_attitudes ;
+    pr:adoptprocess_credibility pr:risk_attitudes .
+
+pr:format pr:be pr:audit ;
+    pr:beprocess_credibility pr:audit .
+
+pr:gain pr:ef pr:ciencies ;
+    pr:efprocess_credibility pr:ciencies .
+
+pr:guide pr:project pr:pmi_standards ;
+    pr:projectprocess_credibility pr:pmi_standards .
+
+pr:history pr:take pr:form ;
+    pr:takeprocess_credibility pr:form .
+
+pr:identification_checklists pr:has pr:projects ;
+    pr:hasprocess_credibility pr:projects .
+
+pr:impact_definitions pr:be pr:opportunities ;
+    pr:beprocess_credibility pr:opportunities .
+
+pr:impact_matrixrisks pr:be pr:risk_responses ;
+    pr:beprocess_credibility pr:risk_responses .
+
+pr:impact_scales pr:presents pr:project_objectives ;
+    pr:presentsprocess_credibility pr:project_objectives .
+
+pr:industry_studies pr:be pr:industry ;
+    pr:beprocess_credibility pr:industry .
+
+pr:informationwork_performance pr:risks pr:risks_output ;
+    pr:risksprocess_credibility pr:risks_output .
+
+pr:instance pr:be pr:high ;
+    pr:beprocess_credibility pr:high .
+
+pr:lack pr:develop pr:models ;
+    pr:developprocess_credibility pr:models .
+
+pr:liability pr:is pr:risk_exposure ;
+    pr:isprocess_credibility pr:risk_exposure .
+
+pr:list pr:includes pr:risks ;
+    pr:includesprocess_credibility pr:risks .
+
+pr:management_ownership pr:be pr:ed ;
+    pr:beprocess_credibility pr:ed .
+
+pr:management_project pr:guide pr:edition ;
+    pr:guideprocess_credibility pr:edition .
+
+pr:management_purpose pr:is pr:nes_aspects ;
+    pr:isprocess_credibility pr:nes_aspects .
+
+pr:management_team pr:identify pr:techniques_d ;
+    pr:identifyprocess_credibility pr:techniques_d .
+
+pr:management_templates pr:bene pr:bene_t ;
+    pr:beneprocess_credibility pr:bene_t .
+
+pr:management_time pr:carry pr:management_process ;
+    pr:carryprocess_credibility pr:management_process .
+
+pr:management_tools pr:risk pr:risk ;
+    pr:riskprocess_credibility pr:risk .
+
+pr:management_understanding pr:is pr:component ;
+    pr:isprocess_credibility pr:component .
+
+pr:managementappendix_c pr:contributors pr:practice_standard ;
+    pr:contributorsprocess_credibility pr:practice_standard .
+
+pr:manager pr:handle pr:risk ;
+    pr:handleprocess_credibility pr:risk .
+
+pr:material pr:project pr:management_processes ;
+    pr:projectprocess_credibility pr:management_processes .
+
+pr:matrix pr:specifies pr:rating_risks ;
+    pr:specifiesprocess_credibility pr:rating_risks .
+
+pr:memv pr:build pr:plant ;
+    pr:buildprocess_credibility pr:plant .
+
+pr:mitigation pr:require pr:prototype_development ;
+    pr:requireprocess_credibility pr:prototype_development .
+
+pr:mitigation_response pr:address pr:linkages ;
+    pr:addressprocess_credibility pr:linkages .
+
+pr:monitoring_methods pr:ensure pr:risk_management ;
+    pr:ensureprocess_credibility pr:risk_management .
+
+pr:nition pr:includes pr:events ;
+    pr:includesprocess_credibility pr:events .
+
+pr:none pr:be pr:management_process ;
+    pr:beprocess_credibility pr:management_process .
+
+pr:organizations pr:thresholds pr:thresholds ;
+    pr:thresholdsprocess_credibility pr:thresholds .
+
+pr:organizations_objectives pr:practices pr:feasibility ;
+    pr:practicesprocess_credibility pr:feasibility .
+
+pr:orientation pr:requires pr:consideration ;
+    pr:requiresprocess_credibility pr:consideration .
+
+pr:outputs pr:be pr:account,
+        pr:project_stakeholders,
+        pr:stakeholders ;
+    pr:beprocess_credibility pr:account,
+        pr:project_stakeholders,
+        pr:stakeholders .
+
+pr:participants pr:describe pr:risks ;
+    pr:describeprocess_credibility pr:risks ;
+    pr:include pr:project_manager ;
+    pr:includeprocess_credibility pr:project_manager .
+
+pr:path_valuedecision pr:be pr:decision_madeinput ;
+    pr:beprocess_credibility pr:decision_madeinput .
+
+pr:performance_measurement pr:compares pr:project_execution ;
+    pr:comparesprocess_credibility pr:project_execution .
+
+pr:performance_measures pr:include pr:transaction_times ;
+    pr:includeprocess_credibility pr:transaction_times .
+
+pr:plan_risk pr:estimates pr:plan_procurement ;
+    pr:estimatesprocess_credibility pr:plan_procurement .
+
+pr:plan_updateselements pr:be pr:result ;
+    pr:beprocess_credibility pr:result .
+
+pr:plan_updatesif pr:reflect pr:changes ;
+    pr:reflectprocess_credibility pr:changes .
+
+pr:planin_planning pr:be pr:consideration ;
+    pr:beprocess_credibility pr:consideration .
+
+pr:planning_meetings pr:develop pr:risk_management_plan ;
+    pr:developprocess_credibility pr:risk_management_plan .
+
+pr:planthe_risk pr:is pr:component ;
+    pr:isprocess_credibility pr:component .
+
+pr:pmi_practice_standard pr:describes pr:processes ;
+    pr:describesprocess_credibility pr:processes .
+
+pr:point pr:is pr:risk ;
+    pr:isprocess_credibility pr:risk .
+
+pr:practice_project pr:is pr:project_management ;
+    pr:isprocess_credibility pr:project_management .
+
+pr:practitioners pr:establish pr:establish_processes ;
+    pr:establishprocess_credibility pr:establish_processes .
+
+pr:process_effectiveness pr:is pr:information ;
+    pr:isprocess_credibility pr:information .
+
+pr:project_charter pr:provide pr:highlevel_risks ;
+    pr:provideprocess_credibility pr:highlevel_risks .
+
+pr:project_element pr:affects pr:elements ;
+    pr:affectsprocess_credibility pr:elements .
+
+pr:project_model pr:is pr:input_values ;
+    pr:isprocess_credibility pr:input_values .
+
+pr:project_outcomes pr:express pr:project_objective ;
+    pr:expressprocess_credibility pr:project_objective .
+
+pr:project_phase pr:determine pr:areas ;
+    pr:determineprocess_credibility pr:areas .
+
+pr:project_plan pr:becomes pr:decisions ;
+    pr:becomesprocess_credibility pr:decisions .
+
+pr:project_requirements pr:be pr:indicators ;
+    pr:beprocess_credibility pr:indicators .
+
+pr:project_scheduling pr:provides pr:activity_durations ;
+    pr:providesprocess_credibility pr:activity_durations .
+
+pr:project_simulation pr:uses pr:model ;
+    pr:usesprocess_credibility pr:model .
+
+pr:project_work pr:is pr:project_management_plan ;
+    pr:isprocess_credibility pr:project_management_plan .
+
+pr:projects_execution pr:be pr:performance_information ;
+    pr:beprocess_credibility pr:performance_information .
+
+pr:projects_stakeholders pr:provides pr:overview ;
+    pr:providesprocess_credibility pr:overview .
+
+pr:projects_team pr:is pr:crossindustry ;
+    pr:isprocess_credibility pr:crossindustry .
+
+pr:provision pr:be pr:management_processes ;
+    pr:beprocess_credibility pr:management_processes .
+
+pr:purposes pr:determine pr:project_assumptions ;
+    pr:determineprocess_credibility pr:project_assumptions .
+
+pr:quality_assessmentrisk pr:is pr:technique ;
+    pr:isprocess_credibility pr:technique .
+
+pr:quality_assurance pr:updates pr:requirements_documentation ;
+    pr:updatesprocess_credibility pr:requirements_documentation .
+
+pr:quality_management_plan pr:provides pr:quality_measures ;
+    pr:providesprocess_credibility pr:quality_measures .
+
+pr:qualityeach_risk pr:is pr:probability ;
+    pr:isprocess_credibility pr:probability .
+
+pr:rationale pr:ranges pr:risk_interview ;
+    pr:rangesprocess_credibility pr:risk_interview .
+
+pr:rbs_structures pr:be pr:types ;
+    pr:beprocess_credibility pr:types .
+
+pr:recognize_value pr:be pr:discipline ;
+    pr:beprocess_credibility pr:discipline .
+
+pr:reduction pr:be pr:threshold_limits ;
+    pr:beprocess_credibility pr:threshold_limits .
+
+pr:relationship pr:is pr:figure ;
+    pr:isprocess_credibility pr:figure .
+
+pr:resource_management_plan pr:provides pr:guidance ;
+    pr:providesprocess_credibility pr:guidance .
+
+pr:review pr:result pr:projections ;
+    pr:resultprocess_credibility pr:projections .
+
+pr:review_approaches pr:ensure pr:risks ;
+    pr:ensureprocess_credibility pr:risks ;
+    pr:rely pr:reference_points ;
+    pr:relyprocess_credibility pr:reference_points .
+
+pr:risk_acceptance pr:is pr:strategy_project ;
+    pr:isprocess_credibility pr:strategy_project .
+
+pr:risk_analysis_chapter pr:evaluates pr:characteristics,
+        pr:project_outcome ;
+    pr:evaluatesprocess_credibility pr:characteristics,
+        pr:project_outcome .
+
+pr:risk_approach pr:optimize pr:risk_responses ;
+    pr:optimizeprocess_credibility pr:risk_responses .
+
+pr:risk_avoidance pr:is pr:strategy_project ;
+    pr:isprocess_credibility pr:strategy_project .
+
+pr:risk_breakdown_structure pr:helps pr:project_team ;
+    pr:helpsprocess_credibility pr:project_team .
+
+pr:risk_categorizationrisks pr:be pr:risk_e ;
+    pr:beprocess_credibility pr:risk_e .
+
+pr:risk_description pr:include pr:trigger_conditions ;
+    pr:includeprocess_credibility pr:trigger_conditions .
+
+pr:risk_descriptions pr:ensure pr:clarity ;
+    pr:ensureprocess_credibility pr:clarity .
+
+pr:risk_effort pr:project pr:risk_management ;
+    pr:projectprocess_credibility pr:risk_management .
+
+pr:risk_evaluation pr:be pr:techniques ;
+    pr:beprocess_credibility pr:techniques .
+
+pr:risk_impact_assessment pr:investigates pr:project_objective ;
+    pr:investigatesprocess_credibility pr:project_objective .
+
+pr:risk_information pr:support pr:order ;
+    pr:supportprocess_credibility pr:order .
+
+pr:risk_management_context pr:is pr:risk_exposure ;
+    pr:isprocess_credibility pr:risk_exposure .
+
+pr:risk_management_planning pr:be pr:planning ;
+    pr:beprocess_credibility pr:planning ;
+    pr:establish pr:risk_detail ;
+    pr:establishprocess_credibility pr:risk_detail ;
+    pr:has pr:management_process ;
+    pr:hasprocess_credibility pr:management_process .
+
+pr:risk_managementas pr:rate pr:risk ;
+    pr:rateprocess_credibility pr:risk .
+
+pr:risk_managementparticipants pr:include pr:matter_experts ;
+    pr:includeprocess_credibility pr:matter_experts .
+
+pr:risk_managementperform pr:assesses pr:project_objectives ;
+    pr:assessesprocess_credibility pr:project_objectives .
+
+pr:risk_metalanguage pr:offers pr:way ;
+    pr:offersprocess_credibility pr:way .
+
+pr:risk_mitigation pr:is pr:strategy_project ;
+    pr:isprocess_credibility pr:strategy_project .
+
+pr:risk_rating_rules pr:be pr:management_process ;
+    pr:beprocess_credibility pr:management_process .
+
+pr:risk_reassessmentcontrol pr:risks pr:results ;
+    pr:risksprocess_credibility pr:results .
+
+pr:risk_registerthe pr:identify pr:risks ;
+    pr:identifyprocess_credibility pr:risks .
+
+pr:risk_response_owner pr:reports pr:project_manager ;
+    pr:reportsprocess_credibility pr:project_manager .
+
+pr:risk_responses_chapter pr:determines pr:response_strategies ;
+    pr:determinesprocess_credibility pr:response_strategies .
+
+pr:risk_statements pr:be pr:example ;
+    pr:beprocess_credibility pr:example .
+
+pr:risk_transference pr:involves pr:risk_premium ;
+    pr:involvesprocess_credibility pr:risk_premium ;
+    pr:is pr:strategy_project ;
+    pr:isprocess_credibility pr:strategy_project .
+
+pr:risk_urgency pr:is pr:risk_ranking ;
+    pr:isprocess_credibility pr:risk_ranking .
+
+pr:risks_importance pr:is pr:impact_matrix ;
+    pr:isprocess_credibility pr:impact_matrix ;
+    pr:project pr:project ;
+    pr:projectprocess_credibility pr:project .
+
+pr:risktaking_scenarios pr:highlights pr:benefits ;
+    pr:highlightsprocess_credibility pr:benefits .
+
+pr:schedule_impacts pr:evaluate pr:probability ;
+    pr:evaluateprocess_credibility pr:probability .
+
+pr:scheduling pr:be pr:level ;
+    pr:beprocess_credibility pr:level .
+
+pr:sensitivity_analysis pr:is pr:figure ;
+    pr:isprocess_credibility pr:figure .
+
+pr:sharing_actions pr:be pr:purpose ;
+    pr:beprocess_credibility pr:purpose .
+
+pr:simulation pr:uses pr:cost_estimates ;
+    pr:usesprocess_credibility pr:cost_estimates .
+
+pr:sponsorapproval_costincrease pr:is pr:effectivelyuseless_probability ;
+    pr:isprocess_credibility pr:effectivelyuseless_probability .
+
+pr:staff_allocation pr:updates pr:resource_loading ;
+    pr:updatesprocess_credibility pr:resource_loading .
+
+pr:status pr:identify pr:risks ;
+    pr:identifyprocess_credibility pr:risks .
+
+pr:step pr:is pr:detail ;
+    pr:isprocess_credibility pr:detail .
+
+pr:strategies pr:deal pr:project_objectives ;
+    pr:dealprocess_credibility pr:project_objectives ;
+    pr:exploit pr:share ;
+    pr:exploitprocess_credibility pr:share .
+
+pr:subjectivity pr:allow pr:cation ;
+    pr:allowprocess_credibility pr:cation .
+
+pr:table pr:illustrates pr:case ;
+    pr:illustratesprocess_credibility pr:case ;
+    pr:is pr:example ;
+    pr:isprocess_credibility pr:example .
+
+pr:tables pr:be pr:impact_perspective ;
+    pr:beprocess_credibility pr:impact_perspective .
+
+pr:targets pr:establish pr:contingency_reserve_levels ;
+    pr:establishprocess_credibility pr:contingency_reserve_levels .
+
+pr:team_members pr:clarifies pr:responsibilities ;
+    pr:clarifiesprocess_credibility pr:responsibilities .
+
+pr:techniquesrisk pr:include pr:cause ;
+    pr:includeprocess_credibility pr:cause .
+
+pr:technology_upgrades pr:reduce pr:cost ;
+    pr:reduceprocess_credibility pr:cost .
+
+pr:threatsthree_strategies pr:have pr:project_objectives ;
+    pr:haveprocess_credibility pr:project_objectives .
+
+pr:threepoint_estimates pr:appears pr:durations_section ;
+    pr:appearsprocess_credibility pr:durations_section .
+
+pr:time_criticality pr:magnify pr:importance ;
+    pr:magnifyprocess_credibility pr:importance .
+
+pr:timeincreaseminor_areas pr:reductionrequires pr:timeincreaseproject_end ;
+    pr:reductionrequiresprocess_credibility pr:timeincreaseproject_end .
+
+pr:timeschedule_objectives pr:be pr:risks ;
+    pr:beprocess_credibility pr:risks .
+
+pr:tools pr:identify pr:risks ;
+    pr:identifyprocess_credibility pr:risks .
+
+pr:transference_tools pr:be pr:performance_bonds ;
+    pr:beprocess_credibility pr:performance_bonds .
+
+pr:trends pr:indicate pr:need ;
+    pr:indicateprocess_credibility pr:need .
+
+pr:uncertainties pr:affect pr:objectives ;
+    pr:affectprocess_credibility pr:objectives .
+
+pr:uncertainty_dimension pr:be pr:term_probability ;
+    pr:beprocess_credibility pr:term_probability .
+
+pr:value_analysis pr:be pr:project_performance ;
+    pr:beprocess_credibility pr:project_performance .
+
+pr:value_emv_analysis pr:is pr:concept ;
+    pr:isprocess_credibility pr:concept .
+
+pr:warning pr:implement pr:implement_plan ;
+    pr:implementprocess_credibility pr:implement_plan .
+
+pr:wbs pr:is pr:input ;
+    pr:isprocess_credibility pr:input .
+
+pr:word_risk pr:is pr:ways ;
+    pr:isprocess_credibility pr:ways .
+
+pr:words pr:communicate pr:nature ;
+    pr:communicateprocess_credibility pr:nature .
+
+pr:work_packages pr:lead pr:risk_responses ;
+    pr:leadprocess_credibility pr:risk_responses .
+
+pr:addition pr:develop pr:ways ;
+    pr:developprocess_credibility pr:ways ;
+    pr:requires pr:input ;
+    pr:requiresprocess_credibility pr:input .
+
+pr:cation_techniques pr:is pr:risks,
+        pr:strengths ;
+    pr:isprocess_credibility pr:risks,
+        pr:strengths .
+
+pr:change_requests pr:include pr:actions ;
+    pr:includeprocess_credibility pr:actions ;
+    pr:perform pr:change_control_process,
+        pr:process_section ;
+    pr:performprocess_credibility pr:change_control_process,
+        pr:process_section .
+
+pr:cost_management_plan pr:provides pr:processes,
+        pr:risk_reserves ;
+    pr:providesprocess_credibility pr:processes,
+        pr:risk_reserves .
+
+pr:data pr:is pr:shape_parameters ;
+    pr:isprocess_credibility pr:shape_parameters .
+
+pr:de_nition pr:includes pr:risk_uncertainty ;
+    pr:includesprocess_credibility pr:risk_uncertainty ;
+    pr:is pr:risks ;
+    pr:isprocess_credibility pr:risks .
+
+pr:effects pr:affect pr:project_objectives ;
+    pr:affectprocess_credibility pr:project_objectives ;
+    pr:allows pr:risk_exposure ;
+    pr:allowsprocess_credibility pr:risk_exposure .
+
+pr:expert_judgment pr:comes pr:play ;
+    pr:comesprocess_credibility pr:play ;
+    pr:determine pr:risk_analysis ;
+    pr:determineprocess_credibility pr:risk_analysis ;
+    pr:is pr:use ;
+    pr:isprocess_credibility pr:use .
+
+pr:experts pr:be pr:project_manager ;
+    pr:beprocess_credibility pr:project_manager ;
+    pr:determine pr:tool ;
+    pr:determineprocess_credibility pr:tool .
+
+pr:experts_bias pr:be pr:account ;
+    pr:beprocess_credibility pr:account .
+
+pr:outcomes pr:forecast pr:schedule_targets ;
+    pr:forecastprocess_credibility pr:schedule_targets ;
+    pr:include pr:identification,
+        pr:risks ;
+    pr:includeprocess_credibility pr:identification,
+        pr:risks ;
+    pr:register pr:time ;
+    pr:registerprocess_credibility pr:time .
+
+pr:pmbok pr:guide pr:edition,
+        pr:nes_risk,
+        pr:practice_standard ;
+    pr:guideprocess_credibility pr:edition,
+        pr:nes_risk,
+        pr:practice_standard .
+
+pr:risk_registerthe_risk pr:has pr:risk_owners ;
+    pr:hasprocess_credibility pr:risk_owners ;
+    pr:refers pr:root_causes ;
+    pr:refersprocess_credibility pr:root_causes .
+
+pr:schedule_management_plan pr:provides pr:insight,
+        pr:risk_reserves ;
+    pr:providesprocess_credibility pr:insight,
+        pr:risk_reserves .
+
+pr:variance pr:be pr:process ;
+    pr:beprocess_credibility pr:process ;
+    pr:trend pr:analysis ;
+    pr:trendprocess_credibility pr:analysis .
+
+pr:activities pr:be pr:breakdown_structure ;
+    pr:beprocess_credibility pr:breakdown_structure .
+
+pr:activity pr:is pr:project_management ;
+    pr:isprocess_credibility pr:project_management .
+
+pr:activity_durations pr:be pr:certainty ;
+    pr:beprocess_credibility pr:certainty .
+
+pr:applicability pr:speci pr:project ;
+    pr:speciprocess_credibility pr:project .
+
+pr:attempt pr:control pr:cost_control ;
+    pr:controlprocess_credibility pr:cost_control .
+
+pr:base_values pr:contains pr:spread ;
+    pr:containsprocess_credibility pr:spread .
+
+pr:baseline pr:cost pr:cost ;
+    pr:costprocess_credibility pr:cost .
+
+pr:benefit pr:is pr:documentation ;
+    pr:isprocess_credibility pr:documentation .
+
+pr:bias pr:keeps pr:person ;
+    pr:keepsprocess_credibility pr:person .
+
+pr:case pr:risks pr:risks ;
+    pr:risksprocess_credibility pr:risks .
+
+pr:cause pr:effect pr:effect_diagrams ;
+    pr:effectprocess_credibility pr:effect_diagrams .
+
+pr:changes pr:assesses pr:management_process ;
+    pr:assessesprocess_credibility pr:management_process .
+
+pr:characteristics pr:be pr:action ;
+    pr:beprocess_credibility pr:action .
+
+pr:checklist pr:be pr:project_closure,
+        pr:time ;
+    pr:beprocess_credibility pr:project_closure,
+        pr:time .
+
+pr:commitments pr:comply pr:rules ;
+    pr:complyprocess_credibility pr:rules .
+
+pr:concept pr:calculates pr:outcome_future ;
+    pr:calculatesprocess_credibility pr:outcome_future .
+
+pr:conclusions pr:produces pr:produces ;
+    pr:producesprocess_credibility pr:produces .
+
+pr:consensus pr:be pr:rounds ;
+    pr:beprocess_credibility pr:rounds .
+
+pr:consistency pr:present pr:nition_documents ;
+    pr:presentprocess_credibility pr:nition_documents .
+
+pr:contingency_reserve_levels pr:protect pr:project_stakeholders ;
+    pr:protectprocess_credibility pr:project_stakeholders .
+
+pr:cost_contingency pr:influence pr:influence ;
+    pr:influenceprocess_credibility pr:influence .
+
+pr:custom_categorization_framework pr:take pr:form ;
+    pr:takeprocess_credibility pr:form .
+
+pr:dates pr:project pr:project ;
+    pr:projectprocess_credibility pr:project .
+
+pr:document_strategy pr:deal pr:risks ;
+    pr:dealprocess_credibility pr:risks .
+
+pr:documentation pr:provides pr:project_team ;
+    pr:providesprocess_credibility pr:project_team .
+
+pr:emv pr:is pr:value ;
+    pr:isprocess_credibility pr:value ;
+    pr:requires pr:assumptionneither_risk_averse ;
+    pr:requiresprocess_credibility pr:assumptionneither_risk_averse .
+
+pr:environment pr:contains pr:chance_nodes ;
+    pr:containsprocess_credibility pr:chance_nodes .
+
+pr:establishment pr:be pr:project_stakeholders ;
+    pr:beprocess_credibility pr:project_stakeholders .
+
+pr:execution pr:occur pr:impacts ;
+    pr:occurprocess_credibility pr:impacts .
+
+pr:experience pr:be pr:account ;
+    pr:beprocess_credibility pr:account ;
+    pr:take pr:work_products ;
+    pr:takeprocess_credibility pr:work_products .
+
+pr:fallback_plan pr:be pr:implementation ;
+    pr:beprocess_credibility pr:implementation .
+
+pr:feasibility pr:is pr:features ;
+    pr:isprocess_credibility pr:features .
+
+pr:foundation pr:perform pr:risk_analysis ;
+    pr:performprocess_credibility pr:risk_analysis .
+
+pr:future pr:give pr:rise ;
+    pr:giveprocess_credibility pr:rise .
+
+pr:groups pr:employ pr:degrees ;
+    pr:employprocess_credibility pr:degrees .
+
+pr:guidelines pr:be pr:risk_analysis ;
+    pr:beprocess_credibility pr:risk_analysis .
+
+pr:identification pr:updates pr:response_plans ;
+    pr:updatesprocess_credibility pr:response_plans .
+
+pr:imagination pr:nd pr:risks ;
+    pr:ndprocess_credibility pr:risks .
+
+pr:indicators pr:include pr:probability ;
+    pr:includeprocess_credibility pr:probability .
+
+pr:insights pr:perform pr:risk_analysis_process ;
+    pr:performprocess_credibility pr:risk_analysis_process .
+
+pr:items pr:appear pr:checklist ;
+    pr:appearprocess_credibility pr:checklist .
+
+pr:learning pr:support pr:management_practice ;
+    pr:supportprocess_credibility pr:management_practice .
+
+pr:lessons pr:improve pr:use ;
+    pr:improveprocess_credibility pr:use .
+
+pr:list_categories pr:assist pr:sources ;
+    pr:assistprocess_credibility pr:sources .
+
+pr:management pr:be pr:project_risk ;
+    pr:beprocess_credibility pr:project_risk .
+
+pr:management_plan pr:identify pr:risk_process ;
+    pr:identifyprocess_credibility pr:risk_process .
+
+pr:mechanism pr:analyze pr:risk_response_plan ;
+    pr:analyzeprocess_credibility pr:risk_response_plan .
+
+pr:milestones pr:is pr:signi ;
+    pr:isprocess_credibility pr:signi .
+
+pr:model pr:translates pr:project_objectives ;
+    pr:translatesprocess_credibility pr:project_objectives .
+
+pr:nes_aspects pr:provide pr:standard ;
+    pr:provideprocess_credibility pr:standard .
+
+pr:ning_actions pr:implement pr:strategy ;
+    pr:implementprocess_credibility pr:strategy .
+
+pr:number pr:be pr:ed ;
+    pr:beprocess_credibility pr:ed .
+
+pr:opportunity_transfer pr:share pr:opportunity ;
+    pr:shareprocess_credibility pr:opportunity .
+
+pr:organization pr:determine pr:impact_result ;
+    pr:determineprocess_credibility pr:impact_result ;
+    pr:use pr:custom_categorization_framework ;
+    pr:useprocess_credibility pr:custom_categorization_framework ;
+    pr:wants pr:likelihood ;
+    pr:wantsprocess_credibility pr:likelihood .
+
+pr:outcome_future pr:includes pr:scenarios ;
+    pr:includesprocess_credibility pr:scenarios .
+
+pr:output pr:be pr:weighting_factors ;
+    pr:beprocess_credibility pr:weighting_factors ;
+    pr:identify pr:risks_process ;
+    pr:identifyprocess_credibility pr:risks_process ;
+    pr:is pr:figure,
+        pr:stakeholder_risk_tolerances ;
+    pr:isprocess_credibility pr:figure,
+        pr:stakeholder_risk_tolerances ;
+    pr:provides pr:mechanism ;
+    pr:providesprocess_credibility pr:mechanism .
+
+pr:overview pr:is pr:figure ;
+    pr:isprocess_credibility pr:figure .
+
+pr:percent pr:meet pr:cost_estimate ;
+    pr:meetprocess_credibility pr:cost_estimate .
+
+pr:perspectives pr:increase pr:breadth ;
+    pr:increaseprocess_credibility pr:breadth .
+
+pr:plan pr:describes pr:risk_management_processes ;
+    pr:describesprocess_credibility pr:risk_management_processes .
+
+pr:planning pr:enhances pr:probability ;
+    pr:enhancesprocess_credibility pr:probability .
+
+pr:planning_information pr:is pr:management_activity ;
+    pr:isprocess_credibility pr:management_activity .
+
+pr:problem pr:develop pr:action ;
+    pr:developprocess_credibility pr:action .
+
+pr:problems_opportunities pr:be pr:bene ;
+    pr:beprocess_credibility pr:bene .
+
+pr:process_chapter pr:exploit pr:opportunity_transfer ;
+    pr:exploitprocess_credibility pr:opportunity_transfer .
+
+pr:procurement_documents pr:be pr:value ;
+    pr:beprocess_credibility pr:value ;
+    pr:identify pr:risks_process ;
+    pr:identifyprocess_credibility pr:risks_process .
+
+pr:progress pr:be pr:action_plans ;
+    pr:beprocess_credibility pr:action_plans .
+
+pr:project_decisions pr:take pr:account ;
+    pr:takeprocess_credibility pr:account .
+
+pr:project_evolves pr:become pr:stakeholders_attitudes ;
+    pr:becomeprocess_credibility pr:stakeholders_attitudes .
+
+pr:project_execution pr:emerge pr:responses ;
+    pr:emergeprocess_credibility pr:responses .
+
+pr:project_lifecycle pr:is pr:stages ;
+    pr:isprocess_credibility pr:stages .
+
+pr:project_risk_process pr:is pr:nonrisks ;
+    pr:isprocess_credibility pr:nonrisks .
+
+pr:project_schedule pr:reflect pr:insights ;
+    pr:reflectprocess_credibility pr:insights .
+
+pr:projects_objectives pr:have pr:effect ;
+    pr:haveprocess_credibility pr:effect .
+
+pr:protocols pr:establishes pr:project_schedule ;
+    pr:establishesprocess_credibility pr:project_schedule .
+
+pr:prototype_development pr:reduce pr:benchscale_model ;
+    pr:reduceprocess_credibility pr:benchscale_model .
+
+pr:questionnaire pr:solicit pr:project_risks ;
+    pr:solicitprocess_credibility pr:project_risks .
+
+pr:range pr:is pr:risk ;
+    pr:isprocess_credibility pr:risk .
+
+pr:reports_work pr:requests pr:work_performance_information ;
+    pr:requestsprocess_credibility pr:work_performance_information .
+
+pr:resources pr:establish pr:agreedupon_basis ;
+    pr:establishprocess_credibility pr:agreedupon_basis ;
+    pr:focus pr:risk_management_activities ;
+    pr:focusprocess_credibility pr:risk_management_activities .
+
+pr:response_plan pr:be pr:conditions ;
+    pr:beprocess_credibility pr:conditions .
+
+pr:response_strategies pr:be pr:project_stakeholders ;
+    pr:beprocess_credibility pr:project_stakeholders ;
+    pr:exists pr:threats ;
+    pr:existsprocess_credibility pr:threats ;
+    pr:integrates pr:project_management_plan ;
+    pr:integratesprocess_credibility pr:project_management_plan .
+
+pr:risk_approaches pr:be pr:bias ;
+    pr:beprocess_credibility pr:bias ;
+    pr:perform pr:risk_analysis_process ;
+    pr:performprocess_credibility pr:risk_analysis_process .
+
+pr:risk_audits pr:be pr:team ;
+    pr:beprocess_credibility pr:team .
+
+pr:risk_impact pr:perform pr:process_chapter ;
+    pr:performprocess_credibility pr:process_chapter .
+
+pr:risk_interview pr:provide pr:insight ;
+    pr:provideprocess_credibility pr:insight .
+
+pr:risk_management_process pr:begin pr:project ;
+    pr:beginprocess_credibility pr:project ;
+    pr:is pr:project_life_cycle ;
+    pr:isprocess_credibility pr:project_life_cycle .
+
+pr:risk_owner pr:is pr:ning_actions,
+        pr:risk ;
+    pr:isprocess_credibility pr:ning_actions,
+        pr:risk ;
+    pr:manage pr:management_processes ;
+    pr:manageprocess_credibility pr:management_processes ;
+    pr:monitor pr:actions ;
+    pr:monitorprocess_credibility pr:actions ;
+    pr:select pr:risk ;
+    pr:selectprocess_credibility pr:risk .
+
+pr:risk_owners pr:cost pr:cost_contingency_reserves ;
+    pr:costprocess_credibility pr:cost_contingency_reserves .
+
+pr:risk_probability pr:be pr:project_context ;
+    pr:beprocess_credibility pr:project_context .
+
+pr:risk_ranking pr:is pr:impact_matrix ;
+    pr:isprocess_credibility pr:impact_matrix .
+
+pr:risk_response_plan pr:is pr:effect ;
+    pr:isprocess_credibility pr:effect .
+
+pr:risks_process_results pr:identify pr:risks_process ;
+    pr:identifyprocess_credibility pr:risks_process .
+
+pr:risks_purpose pr:identify pr:risks ;
+    pr:identifyprocess_credibility pr:risks .
+
+pr:root_cause pr:be pr:root_cause ;
+    pr:beprocess_credibility pr:root_cause .
+
+pr:rules pr:be pr:culture ;
+    pr:beprocess_credibility pr:culture .
+
+pr:series pr:apply pr:projects ;
+    pr:applyprocess_credibility pr:projects .
+
+pr:skills pr:ensure pr:management_process ;
+    pr:ensureprocess_credibility pr:management_process .
+
+pr:sources pr:be pr:risk_process ;
+    pr:beprocess_credibility pr:risk_process ;
+    pr:replace pr:thinking ;
+    pr:replaceprocess_credibility pr:thinking .
+
+pr:stakeholder_risk_tolerances pr:permit pr:quantification ;
+    pr:permitprocess_credibility pr:quantification .
+
+pr:stakeholders_attitudes pr:adapt pr:risk_management_approach ;
+    pr:adaptprocess_credibility pr:risk_management_approach .
+
+pr:statements pr:determine pr:methods ;
+    pr:determineprocess_credibility pr:methods .
+
+pr:sum pr:applies pr:project ;
+    pr:appliesprocess_credibility pr:project .
+
+pr:tailoring pr:follows pr:objectives ;
+    pr:followsprocess_credibility pr:objectives .
+
+pr:team_approach pr:be pr:stages ;
+    pr:beprocess_credibility pr:stages .
+
+pr:techniques_d pr:perform pr:d_techniques ;
+    pr:performprocess_credibility pr:d_techniques .
+
+pr:templates pr:project pr:project ;
+    pr:projectprocess_credibility pr:project .
+
+pr:term_probability pr:be pr:impact ;
+    pr:beprocess_credibility pr:impact .
+
+pr:threat pr:protect pr:project ;
+    pr:protectprocess_credibility pr:project .
+
+pr:tools_techniques pr:outputsproject pr:risk_management ;
+    pr:outputsprojectprocess_credibility pr:risk_management .
+
+pr:tornado_diagram pr:contains pr:base_values ;
+    pr:containsprocess_credibility pr:base_values ;
+    pr:is pr:bar_chart ;
+    pr:isprocess_credibility pr:bar_chart .
+
+pr:triangular_distributions pr:shows pr:project ;
+    pr:showsprocess_credibility pr:project .
+
+pr:triggers pr:has pr:response ;
+    pr:hasprocess_credibility pr:response .
+
+pr:watch_list pr:is pr:risk_register ;
+    pr:isprocess_credibility pr:risk_register .
+
+pr:way_process pr:operates pr:conclusions ;
+    pr:operatesprocess_credibility pr:conclusions .
+
+pr:work_b_scope pr:changes pr:contents_project ;
+    pr:changesprocess_credibility pr:contents_project .
+
+pr:work_products pr:reports pr:reports ;
+    pr:reportsprocess_credibility pr:reports .
+
+pr:agreement pr:be pr:risk ;
+    pr:beprocess_credibility pr:risk ;
+    pr:ensure pr:risk_management_process ;
+    pr:ensureprocess_credibility pr:risk_management_process .
+
+pr:approaches pr:be pr:project_objectives ;
+    pr:beprocess_credibility pr:project_objectives ;
+    pr:project pr:project_risk_management ;
+    pr:projectprocess_credibility pr:project_risk_management .
+
+pr:communication pr:be pr:management_process ;
+    pr:beprocess_credibility pr:management_process ;
+    pr:occurs pr:project_team ;
+    pr:occursprocess_credibility pr:project_team .
+
+pr:contingency_reserves pr:be pr:risk_assessment ;
+    pr:beprocess_credibility pr:risk_assessment ;
+    pr:bring pr:project_objectives ;
+    pr:bringprocess_credibility pr:project_objectives ;
+    pr:determine pr:reserve ;
+    pr:determineprocess_credibility pr:reserve .
+
+pr:decision_making pr:is pr:authority_levels ;
+    pr:isprocess_credibility pr:authority_levels ;
+    pr:reduce pr:project_uncertainty ;
+    pr:reduceprocess_credibility pr:project_uncertainty .
+
+pr:enterprise pr:influence pr:influence,
+        pr:risk_management ;
+    pr:influenceprocess_credibility pr:influence,
+        pr:risk_management ;
+    pr:provide pr:insight,
+        pr:risk_assessment ;
+    pr:provideprocess_credibility pr:insight,
+        pr:risk_assessment .
+
+pr:management_activities pr:be pr:project_risk ;
+    pr:beprocess_credibility pr:project_risk ;
+    pr:prede pr:risk_categories ;
+    pr:predeprocess_credibility pr:risk_categories .
+
+pr:means pr:lays pr:foundation ;
+    pr:laysprocess_credibility pr:foundation ;
+    pr:work pr:team_approach ;
+    pr:workprocess_credibility pr:team_approach .
+
+pr:principles pr:be pr:level,
+        pr:organizations_processes ;
+    pr:beprocess_credibility pr:level,
+        pr:organizations_processes ;
+    pr:project pr:terminology ;
+    pr:projectprocess_credibility pr:terminology .
+
+pr:project_assumptions pr:be pr:project_risk ;
+    pr:beprocess_credibility pr:project_risk ;
+    pr:shows pr:risk ;
+    pr:showsprocess_credibility pr:risk .
+
+pr:risk_management_approach pr:is pr:projects_life_cycle ;
+    pr:isprocess_credibility pr:projects_life_cycle ;
+    pr:take pr:facts ;
+    pr:takeprocess_credibility pr:facts .
+
+pr:risk_statement pr:ensure pr:elements ;
+    pr:ensureprocess_credibility pr:elements ;
+    pr:support pr:support_ability ;
+    pr:supportprocess_credibility pr:support_ability .
+
+pr:risk_thresholds pr:identify pr:risks ;
+    pr:identifyprocess_credibility pr:risks ;
+    pr:views pr:views ;
+    pr:viewsprocess_credibility pr:views .
+
+pr:role pr:is pr:activity,
+        pr:projects ;
+    pr:isprocess_credibility pr:activity,
+        pr:projects .
+
+pr:situation pr:be pr:risks ;
+    pr:beprocess_credibility pr:risks ;
+    pr:is pr:project_plans ;
+    pr:isprocess_credibility pr:project_plans .
+
+pr:team pr:anticipate pr:events ;
+    pr:anticipateprocess_credibility pr:events ;
+    pr:describes pr:frequency ;
+    pr:describesprocess_credibility pr:frequency ;
+    pr:explore pr:items ;
+    pr:exploreprocess_credibility pr:items .
+
+pr:tool pr:be pr:organizations_capabilities ;
+    pr:beprocess_credibility pr:organizations_capabilities ;
+    pr:process pr:process ;
+    pr:processprocess_credibility pr:process .
+
+pr:uncertainty pr:is pr:project_results ;
+    pr:isprocess_credibility pr:project_results ;
+    pr:provide pr:dates ;
+    pr:provideprocess_credibility pr:dates .
+
+pr:amount pr:cover pr:con_dence ;
+    pr:coverprocess_credibility pr:con_dence ;
+    pr:depends pr:project_progresses ;
+    pr:dependsprocess_credibility pr:project_progresses ;
+    pr:increase pr:time ;
+    pr:increaseprocess_credibility pr:time ;
+    pr:vary pr:risks ;
+    pr:varyprocess_credibility pr:risks .
+
+pr:approach pr:be pr:projects ;
+    pr:beprocess_credibility pr:projects ;
+    pr:expend pr:amount ;
+    pr:expendprocess_credibility pr:amount ;
+    pr:is pr:process_credibility ;
+    pr:isprocess_credibility pr:process_credibility .
+
+pr:aspects pr:suggest pr:risks ;
+    pr:suggestprocess_credibility pr:risks .
+
+pr:assumptions pr:be pr:assumptions ;
+    pr:beprocess_credibility pr:assumptions .
+
+pr:d_techniques pr:perform pr:d_techniques ;
+    pr:performprocess_credibility pr:d_techniques ;
+    pr:templates pr:responses_chapter ;
+    pr:templatesprocess_credibility pr:responses_chapter .
+
+pr:decisions pr:capture pr:opportunities ;
+    pr:captureprocess_credibility pr:opportunities ;
+    pr:reassign pr:personnel ;
+    pr:reassignprocess_credibility pr:personnel .
+
+pr:degree pr:is pr:accuracy,
+        pr:risk_management ;
+    pr:isprocess_credibility pr:accuracy,
+        pr:risk_management .
+
+pr:effectiveness pr:identify pr:risks ;
+    pr:identifyprocess_credibility pr:risks .
+
+pr:expectations pr:be pr:way ;
+    pr:beprocess_credibility pr:way .
+
+pr:form pr:be pr:rbs ;
+    pr:beprocess_credibility pr:rbs .
+
+pr:frequency pr:carry pr:management_processes ;
+    pr:carryprocess_credibility pr:management_processes ;
+    pr:depend pr:nature ;
+    pr:dependprocess_credibility pr:nature ;
+    pr:vary pr:situation ;
+    pr:varyprocess_credibility pr:situation .
+
+pr:importance pr:prioritize pr:risks ;
+    pr:prioritizeprocess_credibility pr:risks .
+
+pr:objective pr:is pr:jeopardy ;
+    pr:isprocess_credibility pr:jeopardy .
+
+pr:opportunity pr:accept pr:contents_project ;
+    pr:acceptprocess_credibility pr:contents_project ;
+    pr:enhance pr:opportunity ;
+    pr:enhanceprocess_credibility pr:opportunity .
+
+pr:others pr:emerge pr:project ;
+    pr:emergeprocess_credibility pr:project .
+
+pr:parameters pr:be pr:manner ;
+    pr:beprocess_credibility pr:manner ;
+    pr:ensure pr:applicability ;
+    pr:ensureprocess_credibility pr:applicability .
+
+pr:part pr:determine pr:project_risk ;
+    pr:determineprocess_credibility pr:project_risk .
+
+pr:project_closure pr:contribute pr:learning ;
+    pr:contributeprocess_credibility pr:learning ;
+    pr:incorporate pr:lessons ;
+    pr:incorporateprocess_credibility pr:lessons .
+
+pr:risk_attitudes pr:be pr:number ;
+    pr:beprocess_credibility pr:number .
+
+pr:risk_management_activities pr:be pr:project_management_plan ;
+    pr:beprocess_credibility pr:project_management_plan .
+
+pr:risk_management_processes pr:be pr:project_management_processes ;
+    pr:beprocess_credibility pr:project_management_processes .
+
+pr:root_causes pr:is pr:lowpriority_risks ;
+    pr:isprocess_credibility pr:lowpriority_risks .
+
+pr:sections pr:maximize pr:value ;
+    pr:maximizeprocess_credibility pr:value .
+
+pr:stages pr:is pr:information ;
+    pr:isprocess_credibility pr:information .
+
+pr:strategy pr:be pr:impacts_organization ;
+    pr:beprocess_credibility pr:impacts_organization ;
+    pr:indicates pr:project_team ;
+    pr:indicatesprocess_credibility pr:project_team .
+
+pr:ways pr:determine pr:rating ;
+    pr:determineprocess_credibility pr:rating .
+
+pr:chapter pr:addresses pr:success_factors ;
+    pr:addressesprocess_credibility pr:success_factors ;
+    pr:guide pr:edition ;
+    pr:guideprocess_credibility pr:edition ;
+    pr:includes pr:sections_purpose ;
+    pr:includesprocess_credibility pr:sections_purpose ;
+    pr:outlines pr:steps ;
+    pr:outlinesprocess_credibility pr:steps ;
+    pr:project pr:project_risk_management ;
+    pr:projectprocess_credibility pr:project_risk_management .
+
+pr:conditions pr:give pr:rise,
+        pr:risk ;
+    pr:giveprocess_credibility pr:rise,
+        pr:risk .
+
+pr:consideration pr:make pr:risk_management_plan ;
+    pr:makeprocess_credibility pr:risk_management_plan ;
+    pr:occur pr:terms ;
+    pr:occurprocess_credibility pr:terms .
+
+pr:cost pr:be pr:project_budget,
+        pr:value ;
+    pr:beprocess_credibility pr:project_budget,
+        pr:value ;
+    pr:realize pr:project_objectives ;
+    pr:realizeprocess_credibility pr:project_objectives .
+
+pr:discipline pr:contains pr:series ;
+    pr:containsprocess_credibility pr:series ;
+    pr:provides pr:project_stakeholders ;
+    pr:providesprocess_credibility pr:project_stakeholders .
+
+pr:inputs pr:identify pr:risks ;
+    pr:identifyprocess_credibility pr:risks ;
+    pr:plan pr:risk_responses_process ;
+    pr:planprocess_credibility pr:risk_responses_process ;
+    pr:project pr:management_process ;
+    pr:projectprocess_credibility pr:management_process .
+
+pr:project_managers pr:plan pr:plan ;
+    pr:planprocess_credibility pr:plan ;
+    pr:reduce pr:level ;
+    pr:reduceprocess_credibility pr:level .
+
+pr:risk_categories pr:be pr:project ;
+    pr:beprocess_credibility pr:project ;
+    pr:is pr:decision_making ;
+    pr:isprocess_credibility pr:decision_making .
+
+pr:signi pr:be pr:cation ;
+    pr:beprocess_credibility pr:cation ;
+    pr:is pr:risks ;
+    pr:isprocess_credibility pr:risks .
+
+pr:technique pr:evaluate pr:degree ;
+    pr:evaluateprocess_credibility pr:degree ;
+    pr:examines pr:project ;
+    pr:examinesprocess_credibility pr:project ;
+    pr:identify pr:problem ;
+    pr:identifyprocess_credibility pr:problem ;
+    pr:is pr:way ;
+    pr:isprocess_credibility pr:way ;
+    pr:starts pr:business_area ;
+    pr:startsprocess_credibility pr:business_area .
+
+pr:terms pr:be pr:preference,
+        pr:risk_management_plan ;
+    pr:beprocess_credibility pr:preference,
+        pr:risk_management_plan .
+
+pr:trigger_conditions pr:be pr:ed ;
+    pr:beprocess_credibility pr:ed ;
+    pr:implement pr:triggers ;
+    pr:implementprocess_credibility pr:triggers .
+
+pr:action pr:reduce pr:probability ;
+    pr:reduceprocess_credibility pr:probability .
+
+pr:areas pr:determine pr:value_emv ;
+    pr:determineprocess_credibility pr:value_emv .
+
+pr:basis pr:estimate pr:estimate_amount ;
+    pr:estimateprocess_credibility pr:estimate_amount ;
+    pr:includes pr:processes ;
+    pr:includesprocess_credibility pr:processes .
+
+pr:input pr:be pr:project_stakeholders,
+        pr:risk ;
+    pr:beprocess_credibility pr:project_stakeholders,
+        pr:risk ;
+    pr:facilitates pr:understanding ;
+    pr:facilitatesprocess_credibility pr:understanding .
+
+pr:project_budget pr:describe pr:project_budget ;
+    pr:describeprocess_credibility pr:project_budget .
+
+pr:project_documents pr:be pr:result,
+        pr:risk,
+        pr:risks ;
+    pr:beprocess_credibility pr:result,
+        pr:risk,
+        pr:risks ;
+    pr:include pr:assumptions ;
+    pr:includeprocess_credibility pr:assumptions ;
+    pr:updates pr:project_management_plan,
+        pr:risk ;
+    pr:updatesprocess_credibility pr:project_management_plan,
+        pr:risk .
+
+pr:project_life_cycle pr:establishes pr:protocols ;
+    pr:establishesprocess_credibility pr:protocols .
+
+pr:project_objective pr:identify pr:risks_process ;
+    pr:identifyprocess_credibility pr:risks_process .
+
+pr:project_risk_management pr:addresses pr:project_estimates ;
+    pr:addressesprocess_credibility pr:project_estimates ;
+    pr:adds pr:project_risk ;
+    pr:addsprocess_credibility pr:project_risk ;
+    pr:be pr:compliance ;
+    pr:beprocess_credibility pr:compliance ;
+    pr:covers pr:risk_management ;
+    pr:coversprocess_credibility pr:risk_management ;
+    pr:is pr:process,
+        pr:project_risk,
+        pr:substitute ;
+    pr:isprocess_credibility pr:process,
+        pr:project_risk,
+        pr:substitute ;
+    pr:plays pr:completion_dates ;
+    pr:playsprocess_credibility pr:completion_dates ;
+    pr:provides pr:approach,
+        pr:bene ;
+    pr:providesprocess_credibility pr:approach,
+        pr:bene ;
+    pr:recognize pr:business_challenges ;
+    pr:recognizeprocess_credibility pr:business_challenges ;
+    pr:remains pr:cation ;
+    pr:remainsprocess_credibility pr:cation ;
+    pr:require pr:level ;
+    pr:requireprocess_credibility pr:level ;
+    pr:requires pr:execution,
+        pr:project_management_processes ;
+    pr:requiresprocess_credibility pr:execution,
+        pr:project_management_processes .
+
+pr:risk_assessment pr:be pr:industry ;
+    pr:beprocess_credibility pr:industry ;
+    pr:is pr:start ;
+    pr:isprocess_credibility pr:start .
+
+pr:risk_exposure pr:is pr:project_risks ;
+    pr:isprocess_credibility pr:project_risks .
+
+pr:risk_process pr:is pr:project_management ;
+    pr:isprocess_credibility pr:project_management .
+
+pr:risk_register pr:be pr:information,
+        pr:level ;
+    pr:beprocess_credibility pr:information,
+        pr:level ;
+    pr:include pr:analysis,
+        pr:risk_reassessments ;
+    pr:includeprocess_credibility pr:analysis,
+        pr:risk_reassessments ;
+    pr:provides pr:lowpriority_risks ;
+    pr:providesprocess_credibility pr:lowpriority_risks .
+
+pr:risk_response pr:requires pr:understanding ;
+    pr:requiresprocess_credibility pr:understanding ;
+    pr:take pr:risk_response ;
+    pr:takeprocess_credibility pr:risk_response .
+
+pr:success pr:agree pr:level ;
+    pr:agreeprocess_credibility pr:level ;
+    pr:is pr:use ;
+    pr:isprocess_credibility pr:use ;
+    pr:relies pr:communication ;
+    pr:reliesprocess_credibility pr:communication ;
+    pr:results pr:results ;
+    pr:resultsprocess_credibility pr:results .
+
+pr:success_factors pr:identify pr:sections ;
+    pr:identifyprocess_credibility pr:sections ;
+    pr:perform pr:factors,
+        pr:project_risk ;
+    pr:performprocess_credibility pr:factors,
+        pr:project_risk .
+
+pr:techniques pr:address pr:risks ;
+    pr:addressprocess_credibility pr:risks ;
+    pr:be pr:groups,
+        pr:needs,
+        pr:projects ;
+    pr:beprocess_credibility pr:groups,
+        pr:needs,
+        pr:projects ;
+    pr:gain pr:project_objectives ;
+    pr:gainprocess_credibility pr:project_objectives ;
+    pr:provide pr:highlevel_assessment ;
+    pr:provideprocess_credibility pr:highlevel_assessment ;
+    pr:quantify pr:project_objectives ;
+    pr:quantifyprocess_credibility pr:project_objectives ;
+    pr:think pr:success ;
+    pr:thinkprocess_credibility pr:success ;
+    pr:trend pr:performance_information ;
+    pr:trendprocess_credibility pr:performance_information .
+
+pr:threats pr:be pr:problems_opportunities ;
+    pr:beprocess_credibility pr:problems_opportunities ;
+    pr:require pr:management_action ;
+    pr:requireprocess_credibility pr:management_action .
+
+pr:analysis pr:compares pr:contingency_reserves ;
+    pr:comparesprocess_credibility pr:contingency_reserves ;
+    pr:examines pr:degree ;
+    pr:examinesprocess_credibility pr:degree ;
+    pr:identifies pr:opportunities ;
+    pr:identifiesprocess_credibility pr:opportunities ;
+    pr:is pr:technique,
+        pr:trend ;
+    pr:isprocess_credibility pr:technique,
+        pr:trend ;
+    pr:uses pr:terms ;
+    pr:usesprocess_credibility pr:terms .
+
+pr:component pr:describes pr:risk_management_activities ;
+    pr:describesprocess_credibility pr:risk_management_activities ;
+    pr:precedes pr:cation ;
+    pr:precedesprocess_credibility pr:cation .
+
+pr:elements pr:be pr:responses_process ;
+    pr:beprocess_credibility pr:responses_process ;
+    pr:identify pr:risks_process ;
+    pr:identifyprocess_credibility pr:risks_process ;
+    pr:perform pr:schedule_activities ;
+    pr:performprocess_credibility pr:schedule_activities ;
+    pr:update pr:update_frequency ;
+    pr:updateprocess_credibility pr:update_frequency .
+
+pr:impact_matrix pr:give pr:risk_severity_rating ;
+    pr:giveprocess_credibility pr:risk_severity_rating ;
+    pr:is pr:mapping_probability ;
+    pr:isprocess_credibility pr:mapping_probability .
+
+pr:insight pr:project pr:expectations ;
+    pr:projectprocess_credibility pr:expectations ;
+    pr:risk pr:risk_analysis ;
+    pr:riskprocess_credibility pr:risk_analysis .
+
+pr:management_chapter pr:develop pr:project ;
+    pr:developprocess_credibility pr:project ;
+    pr:identify pr:risks_purpose ;
+    pr:identifyprocess_credibility pr:risks_purpose ;
+    pr:introduces pr:ideas ;
+    pr:introducesprocess_credibility pr:ideas ;
+    pr:perform pr:objectives ;
+    pr:performprocess_credibility pr:objectives ;
+    pr:project pr:management_processes ;
+    pr:projectprocess_credibility pr:management_processes ;
+    pr:use pr:use ;
+    pr:useprocess_credibility pr:use .
+
+pr:nature pr:is pr:timing ;
+    pr:isprocess_credibility pr:timing ;
+    pr:requires pr:management_process ;
+    pr:requiresprocess_credibility pr:management_process .
+
+pr:understanding pr:address pr:address_risk ;
+    pr:addressprocess_credibility pr:address_risk ;
+    pr:be pr:management_process ;
+    pr:beprocess_credibility pr:management_process .
+
+pr:account pr:result pr:project_strategy ;
+    pr:resultprocess_credibility pr:project_strategy .
+
+pr:events pr:be pr:conditions ;
+    pr:beprocess_credibility pr:conditions ;
+    pr:have pr:projects_objectives ;
+    pr:haveprocess_credibility pr:projects_objectives .
+
+pr:example pr:be pr:risk_impacts ;
+    pr:beprocess_credibility pr:risk_impacts ;
+    pr:has pr:capabilities ;
+    pr:hasprocess_credibility pr:capabilities ;
+    pr:is pr:figure ;
+    pr:isprocess_credibility pr:figure ;
+    pr:leads pr:capacity_limitations ;
+    pr:leadsprocess_credibility pr:capacity_limitations ;
+    pr:occur pr:impact ;
+    pr:occurprocess_credibility pr:impact ;
+    pr:reduce pr:impact ;
+    pr:reduceprocess_credibility pr:impact ;
+    pr:require pr:priority_action ;
+    pr:requireprocess_credibility pr:priority_action .
+
+pr:practice_standard pr:emphasizes pr:principles ;
+    pr:emphasizesprocess_credibility pr:principles ;
+    pr:guide pr:edition ;
+    pr:guideprocess_credibility pr:edition ;
+    pr:has pr:training ;
+    pr:hasprocess_credibility pr:training ;
+    pr:is pr:chapter,
+        pr:sections ;
+    pr:isprocess_credibility pr:chapter,
+        pr:sections .
+
+pr:responses pr:be pr:check,
+        pr:ed,
+        pr:inputs,
+        pr:responses_process ;
+    pr:beprocess_credibility pr:check,
+        pr:ed,
+        pr:inputs,
+        pr:responses_process ;
+    pr:create pr:deal ;
+    pr:createprocess_credibility pr:deal ;
+    pr:deal pr:risks ;
+    pr:dealprocess_credibility pr:risks .
+
+pr:risk_analysis_process pr:analyzes pr:project_objectives ;
+    pr:analyzesprocess_credibility pr:project_objectives ;
+    pr:assesses pr:assesses ;
+    pr:assessesprocess_credibility pr:assesses ;
+    pr:is pr:management_plan ;
+    pr:isprocess_credibility pr:management_plan .
+
+pr:actions pr:be pr:action_owners ;
+    pr:beprocess_credibility pr:action_owners ;
+    pr:determine pr:effectiveness ;
+    pr:determineprocess_credibility pr:effectiveness ;
+    pr:implement pr:strategy,
+        pr:trigger_conditions ;
+    pr:implementprocess_credibility pr:strategy,
+        pr:trigger_conditions ;
+    pr:provide pr:tailoring ;
+    pr:provideprocess_credibility pr:tailoring .
+
+pr:processes pr:be pr:manner ;
+    pr:beprocess_credibility pr:manner ;
+    pr:compare pr:management_practice ;
+    pr:compareprocess_credibility pr:management_practice ;
+    pr:follows pr:plan_risk_management ;
+    pr:followsprocess_credibility pr:plan_risk_management ;
+    pr:guide pr:edition ;
+    pr:guideprocess_credibility pr:edition ;
+    pr:include pr:parameters,
+        pr:project_risks ;
+    pr:includeprocess_credibility pr:parameters,
+        pr:project_risks ;
+    pr:is pr:chapter ;
+    pr:isprocess_credibility pr:chapter .
+
+pr:project_risks pr:is pr:minimum ;
+    pr:isprocess_credibility pr:minimum ;
+    pr:prioritizes pr:risks ;
+    pr:prioritizesprocess_credibility pr:risks .
+
+pr:stakeholders pr:accept pr:responsibility ;
+    pr:acceptprocess_credibility pr:responsibility ;
+    pr:ensure pr:management_process ;
+    pr:ensureprocess_credibility pr:management_process ;
+    pr:sets pr:expectations ;
+    pr:setsprocess_credibility pr:expectations ;
+    pr:tolerances pr:tolerances ;
+    pr:tolerancesprocess_credibility pr:tolerances .
+
+pr:way pr:be pr:escalation ;
+    pr:becomes pr:process_group ;
+    pr:becomesprocess_credibility pr:process_group ;
+    pr:beprocess_credibility pr:escalation ;
+    pr:reach pr:consensus ;
+    pr:reachprocess_credibility pr:consensus .
+
+pr:project_management_plan pr:deal pr:risk ;
+    pr:dealprocess_credibility pr:risk ;
+    pr:eliminate pr:threat ;
+    pr:eliminateprocess_credibility pr:threat ;
+    pr:includes pr:risk_management_plan ;
+    pr:includesprocess_credibility pr:risk_management_plan ;
+    pr:provides pr:baseline ;
+    pr:providesprocess_credibility pr:baseline ;
+    pr:updates pr:process_assets,
+        pr:project_documents ;
+    pr:updatesprocess_credibility pr:process_assets,
+        pr:project_documents .
+
+pr:use pr:addresses pr:risks ;
+    pr:addressesprocess_credibility pr:risks ;
+    pr:is pr:analysis_figure,
+        pr:process_descriptions ;
+    pr:isprocess_credibility pr:analysis_figure,
+        pr:process_descriptions ;
+    pr:lead pr:risk_analysis ;
+    pr:leadprocess_credibility pr:risk_analysis ;
+    pr:organizes pr:list_categories ;
+    pr:organizesprocess_credibility pr:list_categories .
+
+pr:cation pr:be pr:ed,
+        pr:milestones,
+        pr:processes,
+        pr:progress ;
+    pr:beprocess_credibility pr:ed,
+        pr:milestones,
+        pr:processes,
+        pr:progress ;
+    pr:ensure pr:signi ;
+    pr:ensureprocess_credibility pr:signi ;
+    pr:identify pr:risks_process ;
+    pr:identifyprocess_credibility pr:risks_process ;
+    pr:optimize pr:project_success ;
+    pr:optimizeprocess_credibility pr:project_success ;
+    pr:perform pr:process ;
+    pr:performprocess_credibility pr:process ;
+    pr:project pr:project ;
+    pr:projectprocess_credibility pr:project .
+
+pr:figure pr:contains pr:bar ;
+    pr:containsprocess_credibility pr:bar ;
+    pr:is pr:importance ;
+    pr:isprocess_credibility pr:importance ;
+    pr:represents pr:risk ;
+    pr:representsprocess_credibility pr:risk .
+
+pr:objectives pr:be pr:management_process ;
+    pr:beprocess_credibility pr:management_process ;
+    pr:increase pr:probability ;
+    pr:increaseprocess_credibility pr:probability ;
+    pr:perform pr:risk_analysis_process,
+        pr:success_factors ;
+    pr:performprocess_credibility pr:risk_analysis_process,
+        pr:success_factors ;
+    pr:results pr:results ;
+    pr:resultsprocess_credibility pr:results .
+
+pr:opportunities pr:mitigate pr:threats ;
+    pr:mitigateprocess_credibility pr:threats ;
+    pr:reduce pr:project_objectives ;
+    pr:reduceprocess_credibility pr:project_objectives .
+
+pr:order pr:capture pr:information ;
+    pr:captureprocess_credibility pr:information ;
+    pr:ensure pr:consistency,
+        pr:understanding ;
+    pr:ensureprocess_credibility pr:consistency,
+        pr:understanding ;
+    pr:support pr:response_development ;
+    pr:supportprocess_credibility pr:response_development .
+
+pr:effect pr:objectives pr:scope ;
+    pr:objectivesprocess_credibility pr:scope .
+
+pr:process_assets pr:be pr:impact_matrix,
+        pr:projects ;
+    pr:beprocess_credibility pr:impact_matrix,
+        pr:projects ;
+    pr:contributes pr:management_activities ;
+    pr:contributesprocess_credibility pr:management_activities ;
+    pr:influence pr:influence,
+        pr:risk_management ;
+    pr:influenceprocess_credibility pr:influence,
+        pr:risk_management ;
+    pr:updates pr:reports_work ;
+    pr:updatesprocess_credibility pr:reports_work .
+
+pr:edition pr:is pr:basis ;
+    pr:isprocess_credibility pr:basis ;
+    pr:states pr:objectives ;
+    pr:statesprocess_credibility pr:objectives .
+
+pr:management_processes pr:be pr:order,
+        pr:plans,
+        pr:project_team ;
+    pr:beprocess_credibility pr:order,
+        pr:plans,
+        pr:project_team ;
+    pr:guide pr:edition ;
+    pr:guideprocess_credibility pr:edition .
+
+pr:project_management pr:be pr:attempt,
+        pr:way ;
+    pr:beprocess_credibility pr:attempt,
+        pr:way ;
+    pr:enhances pr:value ;
+    pr:enhancesprocess_credibility pr:value ;
+    pr:has pr:role ;
+    pr:hasprocess_credibility pr:role ;
+    pr:is pr:process,
+        pr:success_factor ;
+    pr:isprocess_credibility pr:process,
+        pr:success_factor .
+
+pr:project_manager pr:consider pr:aspects ;
+    pr:considerprocess_credibility pr:aspects ;
+    pr:ensure pr:planning_information ;
+    pr:ensureprocess_credibility pr:planning_information ;
+    pr:exercise pr:exercise_expert_judgment ;
+    pr:exerciseprocess_credibility pr:exercise_expert_judgment ;
+    pr:is pr:risk_audits ;
+    pr:isolate pr:project_objectives ;
+    pr:isolateprocess_credibility pr:project_objectives ;
+    pr:isprocess_credibility pr:risk_audits ;
+    pr:maintain pr:project_evolves ;
+    pr:maintainprocess_credibility pr:project_evolves ;
+    pr:manage pr:risk_planning ;
+    pr:manageprocess_credibility pr:risk_planning .
+
+pr:risk_management_plan pr:deliver pr:value ;
+    pr:deliverprocess_credibility pr:value ;
+    pr:includes pr:methodology ;
+    pr:includesprocess_credibility pr:methodology ;
+    pr:indicate pr:management_processes ;
+    pr:indicateprocess_credibility pr:management_processes ;
+    pr:is pr:component,
+        pr:management_process ;
+    pr:isprocess_credibility pr:component,
+        pr:management_process ;
+    pr:provides pr:guidelines,
+        pr:risk_monitoring ;
+    pr:providesprocess_credibility pr:guidelines,
+        pr:risk_monitoring ;
+    pr:specify pr:risk_monitoring ;
+    pr:specifyprocess_credibility pr:risk_monitoring .
+
+pr:information pr:base pr:base ;
+    pr:baseprocess_credibility pr:base ;
+    pr:becomes pr:risk_assessment,
+        pr:risk_responses ;
+    pr:becomesprocess_credibility pr:risk_assessment,
+        pr:risk_responses ;
+    pr:depends pr:probability_distributions ;
+    pr:dependsprocess_credibility pr:probability_distributions ;
+    pr:help pr:project_managers ;
+    pr:helpprocess_credibility pr:project_managers ;
+    pr:is pr:inputs ;
+    pr:isprocess_credibility pr:inputs ;
+    pr:process pr:process ;
+    pr:processprocess_credibility pr:process .
+
+pr:value pr:becomes pr:aspects ;
+    pr:becomesprocess_credibility pr:aspects ;
+    pr:identify pr:risks_process ;
+    pr:identifyprocess_credibility pr:risks_process ;
+    pr:is pr:concept_stage,
+        pr:part ;
+    pr:isprocess_credibility pr:concept_stage,
+        pr:part .
+
+pr:risk_responses pr:appendices pr:appendices ;
+    pr:appendicesprocess_credibility pr:appendices ;
+    pr:be pr:meeting_challenge,
+        pr:process,
+        pr:risks ;
+    pr:beprocess_credibility pr:meeting_challenge,
+        pr:process,
+        pr:risks ;
+    pr:enhances pr:ciency ;
+    pr:enhancesprocess_credibility pr:ciency ;
+    pr:fallback pr:events ;
+    pr:fallbackprocess_credibility pr:events ;
+    pr:is pr:process ;
+    pr:isprocess_credibility pr:process ;
+    pr:result pr:cost_estimates ;
+    pr:resultprocess_credibility pr:cost_estimates .
+
+pr:level pr:be pr:risk_checklist,
+        pr:risk_owner ;
+    pr:beprocess_credibility pr:risk_checklist,
+        pr:risk_owner ;
+    pr:corresponds pr:priority ;
+    pr:correspondsprocess_credibility pr:priority ;
+    pr:describes pr:project_management ;
+    pr:describesprocess_credibility pr:project_management ;
+    pr:focus pr:highpriority_risks ;
+    pr:focusprocess_credibility pr:highpriority_risks ;
+    pr:is pr:interview,
+        pr:project ;
+    pr:isprocess_credibility pr:interview,
+        pr:project ;
+    pr:require pr:project_manager ;
+    pr:requireprocess_credibility pr:project_manager .
+
+pr:project_team pr:allocate pr:resources ;
+    pr:allocateprocess_credibility pr:resources ;
+    pr:identify pr:project_risks ;
+    pr:identifyprocess_credibility pr:project_risks ;
+    pr:look pr:project_risk ;
+    pr:lookprocess_credibility pr:project_risk ;
+    pr:make pr:response_plan ;
+    pr:makeprocess_credibility pr:response_plan ;
+    pr:performs pr:set ;
+    pr:performsprocess_credibility pr:set ;
+    pr:provide pr:information ;
+    pr:provideprocess_credibility pr:information ;
+    pr:reevaluate pr:reevaluate_status ;
+    pr:reevaluateprocess_credibility pr:reevaluate_status .
+
+pr:risks_process pr:assist pr:risks ;
+    pr:assistprocess_credibility pr:risks ;
+    pr:be pr:order ;
+    pr:becomes pr:project_management ;
+    pr:becomesprocess_credibility pr:project_management ;
+    pr:beprocess_credibility pr:order ;
+    pr:enhance pr:likelihood ;
+    pr:enhanceprocess_credibility pr:likelihood ;
+    pr:ensure pr:opportunities ;
+    pr:ensureprocess_credibility pr:opportunities ;
+    pr:is pr:risk ;
+    pr:isprocess_credibility pr:risk ;
+    pr:nd pr:risks ;
+    pr:ndprocess_credibility pr:risks ;
+    pr:permit pr:risks ;
+    pr:permitprocess_credibility pr:risks ;
+    pr:provide pr:project_management ;
+    pr:provideprocess_credibility pr:project_management ;
+    pr:take pr:project_stakeholders ;
+    pr:takeprocess_credibility pr:project_stakeholders ;
+    pr:use pr:combination ;
+    pr:useprocess_credibility pr:combination .
+
+pr:risk_analysis pr:be pr:part ;
+    pr:beprocess_credibility pr:part ;
+    pr:evaluates pr:probability ;
+    pr:evaluatesprocess_credibility pr:probability ;
+    pr:explores pr:uncertainty ;
+    pr:exploresprocess_credibility pr:uncertainty ;
+    pr:identify pr:risks_process ;
+    pr:identifyprocess_credibility pr:risks_process ;
+    pr:is pr:means,
+        pr:process,
+        pr:project_objectives ;
+    pr:isprocess_credibility pr:means,
+        pr:process,
+        pr:project_objectives ;
+    pr:perform pr:risk_analysis ;
+    pr:performprocess_credibility pr:risk_analysis ;
+    pr:project pr:project ;
+    pr:projectprocess_credibility pr:project ;
+    pr:requires pr:risk_probability ;
+    pr:requiresprocess_credibility pr:risk_probability .
+
+pr:project_stakeholders pr:build pr:skills ;
+    pr:buildprocess_credibility pr:skills ;
+    pr:ensure pr:perspectives ;
+    pr:ensureprocess_credibility pr:perspectives ;
+    pr:form pr:basis ;
+    pr:formprocess_credibility pr:basis ;
+    pr:gain pr:agreement ;
+    pr:gainprocess_credibility pr:agreement ;
+    pr:have pr:perspective ;
+    pr:haveprocess_credibility pr:perspective ;
+    pr:is pr:criterion ;
+    pr:isprocess_credibility pr:criterion ;
+    pr:judge pr:risk ;
+    pr:judgeprocess_credibility pr:risk ;
+    pr:use pr:imagination ;
+    pr:useprocess_credibility pr:imagination .
+
+pr:projects pr:be pr:process_assets,
+        pr:project_plans ;
+    pr:beprocess_credibility pr:process_assets,
+        pr:project_plans ;
+    pr:ensure pr:management ;
+    pr:ensureprocess_credibility pr:management ;
+    pr:guide pr:edition ;
+    pr:guideprocess_credibility pr:edition ;
+    pr:require pr:approaches ;
+    pr:requireprocess_credibility pr:approaches .
+
+pr:risk_management pr:be pr:agenda_item,
+        pr:practice,
+        pr:success ;
+    pr:beprocess_credibility pr:agenda_item,
+        pr:practice,
+        pr:success ;
+    pr:comply pr:practice_standard ;
+    pr:complyprocess_credibility pr:practice_standard ;
+    pr:differ pr:details ;
+    pr:differprocess_credibility pr:details ;
+    pr:focuses pr:risks ;
+    pr:focusesprocess_credibility pr:risks ;
+    pr:identify pr:risks ;
+    pr:identifyprocess_credibility pr:risks ;
+    pr:is pr:discipline,
+        pr:organizations_goals,
+        pr:process,
+        pr:projects,
+        pr:responsibility ;
+    pr:isprocess_credibility pr:discipline,
+        pr:organizations_goals,
+        pr:process,
+        pr:projects,
+        pr:responsibility ;
+    pr:prioritize pr:project_objective ;
+    pr:prioritizeprocess_credibility pr:project_objective ;
+    pr:provides pr:basis ;
+    pr:providesprocess_credibility pr:basis ;
+    pr:requires pr:creation ;
+    pr:requiresprocess_credibility pr:creation ;
+    pr:strategies pr:actions ;
+    pr:strategiesprocess_credibility pr:actions ;
+    pr:take pr:place ;
+    pr:takeprocess_credibility pr:place .
+
+pr:probability pr:affect pr:risk_response ;
+    pr:affectprocess_credibility pr:risk_response ;
+    pr:decrease pr:probability ;
+    pr:decreaseprocess_credibility pr:probability ;
+    pr:define pr:probability_distributions ;
+    pr:defineprocess_credibility pr:probability_distributions ;
+    pr:determine pr:location ;
+    pr:determineprocess_credibility pr:location ;
+    pr:guide pr:project_risk ;
+    pr:guideprocess_credibility pr:project_risk ;
+    pr:occur pr:project_objectives ;
+    pr:occurprocess_credibility pr:project_objectives .
+
+pr:project_risk pr:accept pr:risks ;
+    pr:acceptprocess_credibility pr:risks ;
+    pr:adds pr:value ;
+    pr:addsprocess_credibility pr:value ;
+    pr:affects pr:projects ;
+    pr:affectsprocess_credibility pr:projects ;
+    pr:arise pr:risk_identification_exercise ;
+    pr:ariseprocess_credibility pr:risk_identification_exercise ;
+    pr:determine pr:responses ;
+    pr:determineprocess_credibility pr:responses ;
+    pr:encompasses pr:events ;
+    pr:encompassesprocess_credibility pr:events ;
+    pr:is pr:event,
+        pr:sum ;
+    pr:isprocess_credibility pr:event,
+        pr:sum ;
+    pr:perform pr:risk_impact ;
+    pr:performprocess_credibility pr:risk_impact ;
+    pr:reduce pr:effectiveness ;
+    pr:reduceprocess_credibility pr:effectiveness ;
+    pr:represents pr:effect ;
+    pr:representsprocess_credibility pr:effect .
+
+pr:process pr:affect pr:project ;
+    pr:affectprocess_credibility pr:project ;
+    pr:be pr:project ;
+    pr:beprocess_credibility pr:project ;
+    pr:conduct pr:project ;
+    pr:conductprocess_credibility pr:project ;
+    pr:continues pr:set ;
+    pr:continuesprocess_credibility pr:set ;
+    pr:enhance pr:opportunities ;
+    pr:enhanceprocess_credibility pr:opportunities ;
+    pr:involve pr:project_team ;
+    pr:involveprocess_credibility pr:project_team ;
+    pr:is pr:nature ;
+    pr:isprocess_credibility pr:nature .
+
+pr:management_process pr:be pr:intervals,
+        pr:risk_management_plan,
+        pr:risk_thresholds,
+        pr:stakeholders ;
+    pr:beprocess_credibility pr:intervals,
+        pr:risk_management_plan,
+        pr:risk_thresholds,
+        pr:stakeholders ;
+    pr:build pr:project_stakeholders ;
+    pr:buildprocess_credibility pr:project_stakeholders ;
+    pr:ensures pr:risk_process ;
+    pr:ensuresprocess_credibility pr:risk_process ;
+    pr:is pr:practice_standard ;
+    pr:isprocess_credibility pr:practice_standard ;
+    pr:require pr:decisions ;
+    pr:requireprocess_credibility pr:decisions ;
+    pr:rest pr:project_team ;
+    pr:restprocess_credibility pr:project_team ;
+    pr:starts pr:initiation_step ;
+    pr:startsprocess_credibility pr:initiation_step .
+
+pr:project_objectives pr:be pr:responses_process,
+        pr:risk_analysis_results ;
+    pr:beprocess_credibility pr:responses_process,
+        pr:risk_analysis_results ;
+    pr:change pr:objective ;
+    pr:changeprocess_credibility pr:objective ;
+    pr:provide pr:risk_management ;
+    pr:provideprocess_credibility pr:risk_management ;
+    pr:relate pr:project ;
+    pr:relateprocess_credibility pr:project .
+
+pr:risk pr:affect pr:project_objectives ;
+    pr:affectprocess_credibility pr:project_objectives ;
+    pr:be pr:level ;
+    pr:beprocess_credibility pr:level ;
+    pr:contains pr:information ;
+    pr:containsprocess_credibility pr:information ;
+    pr:enables pr:project_decisions ;
+    pr:enablesprocess_credibility pr:project_decisions ;
+    pr:encourages pr:project_stakeholders ;
+    pr:encouragesprocess_credibility pr:project_stakeholders ;
+    pr:gives pr:party_responsibility ;
+    pr:givesprocess_credibility pr:party_responsibility ;
+    pr:involves pr:ownership ;
+    pr:involvesprocess_credibility pr:ownership ;
+    pr:is pr:implementation,
+        pr:order,
+        pr:probability,
+        pr:project_life_cycle,
+        pr:reference_point,
+        pr:responses,
+        pr:risk_analysis ;
+    pr:isprocess_credibility pr:implementation,
+        pr:order,
+        pr:probability,
+        pr:project_life_cycle,
+        pr:reference_point,
+        pr:responses,
+        pr:risk_analysis ;
+    pr:project pr:project,
+        pr:project_objectives ;
+    pr:projectprocess_credibility pr:project,
+        pr:project_objectives ;
+    pr:register pr:plan_enterprise,
+        pr:process_assets,
+        pr:risk_management_plan ;
+    pr:registerprocess_credibility pr:plan_enterprise,
+        pr:process_assets,
+        pr:risk_management_plan ;
+    pr:represents pr:risk ;
+    pr:representsprocess_credibility pr:risk ;
+    pr:take pr:action ;
+    pr:takeprocess_credibility pr:action .
+
+pr:project pr:be pr:management_process ;
+    pr:beprocess_credibility pr:management_process ;
+    pr:decide pr:risk_management_processes ;
+    pr:decideprocess_credibility pr:risk_management_processes ;
+    pr:depends pr:risk_attitudes ;
+    pr:dependsprocess_credibility pr:risk_attitudes ;
+    pr:differ pr:group ;
+    pr:differprocess_credibility pr:group ;
+    pr:is pr:percent ;
+    pr:isprocess_credibility pr:percent ;
+    pr:progresses pr:life_cycle ;
+    pr:progressesprocess_credibility pr:life_cycle ;
+    pr:requires pr:procurement_documents ;
+    pr:requiresprocess_credibility pr:procurement_documents ;
+    pr:threats pr:threats ;
+    pr:threatsprocess_credibility pr:threats .
+
+pr:risks pr:affect pr:objective,
+        pr:project,
+        pr:project_success ;
+    pr:affectprocess_credibility pr:objective,
+        pr:project,
+        pr:project_success ;
+    pr:arise pr:limitations,
+        pr:project,
+        pr:risk_responses ;
+    pr:ariseprocess_credibility pr:limitations,
+        pr:project,
+        pr:risk_responses ;
+    pr:be pr:cation_events,
+        pr:control_account,
+        pr:others,
+        pr:requirements,
+        pr:risk_categories,
+        pr:risk_register,
+        pr:root_causes,
+        pr:tornado_diagram,
+        pr:watch_list,
+        pr:way_process ;
+    pr:beprocess_credibility pr:cation_events,
+        pr:control_account,
+        pr:others,
+        pr:requirements,
+        pr:risk_categories,
+        pr:risk_register,
+        pr:root_causes,
+        pr:tornado_diagram,
+        pr:watch_list,
+        pr:way_process ;
+    pr:consider pr:project_outcome ;
+    pr:considerprocess_credibility pr:project_outcome ;
+    pr:determine pr:management_process,
+        pr:risk ;
+    pr:determineprocess_credibility pr:management_process,
+        pr:risk ;
+    pr:distinguish pr:nonrisks ;
+    pr:distinguishprocess_credibility pr:nonrisks ;
+    pr:effect pr:effect ;
+    pr:effectprocess_credibility pr:effect ;
+    pr:enhance pr:project_outcome ;
+    pr:enhanceprocess_credibility pr:project_outcome ;
+    pr:ensure pr:project_risk_process,
+        pr:stakeholders ;
+    pr:ensureprocess_credibility pr:project_risk_process,
+        pr:stakeholders ;
+    pr:evaluate pr:project_risk ;
+    pr:evaluateprocess_credibility pr:project_risk ;
+    pr:have pr:cost_contingency ;
+    pr:haveprocess_credibility pr:cost_contingency ;
+    pr:is pr:entry,
+        pr:prerequisite,
+        pr:process,
+        pr:project_team,
+        pr:risk_responses ;
+    pr:isprocess_credibility pr:entry,
+        pr:prerequisite,
+        pr:process,
+        pr:project_team,
+        pr:risk_responses ;
+    pr:occur pr:others ;
+    pr:occurprocess_credibility pr:others ;
+    pr:perform pr:projects,
+        pr:risk_analysis ;
+    pr:performprocess_credibility pr:projects,
+        pr:risk_analysis ;
+    pr:process pr:range ;
+    pr:processprocess_credibility pr:range ;
+    pr:project pr:project ;
+    pr:projectprocess_credibility pr:project ;
+    pr:provide pr:project_managers ;
+    pr:provideprocess_credibility pr:project_managers ;
+    pr:remain pr:risk_response ;
+    pr:remainprocess_credibility pr:risk_response ;
+    pr:review pr:review_threat ;
+    pr:reviewprocess_credibility pr:review_threat ;
+    pr:serve pr:parameters ;
+    pr:serveprocess_credibility pr:parameters .
+
